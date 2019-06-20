@@ -14,24 +14,24 @@
 }
 
 .heading {
-    font-size: 40px;
+    font-size: 47px;
     font-family: NunitoSemibold;
-    width: 500px;
+    width: 585px;
     position: absolute;
     top: 180px;
     left: 80px;
 }
 
 .intro {
-    font-size: 14px;
+    font-size: 16px;
     position: absolute;
-    top: 325px;
+    top: 355px;
     left: 80px;
     font-family: NunitoRegular;
 }
 
 .joinBtn {
-    width: 239px;
+    width: 260px;
     height: 50px;
     background-color: #30BE76;
     border: none;
@@ -40,11 +40,11 @@
     font-size: initial;
     position: absolute;
     left: 80px;
-    top: 400px;
+    top: 450px;
 }
 
 .learnBtn {
-    width: 239px;
+    width: 260px;
     height: 50px;
     background-color: white;
     border: 2px #30BE76 solid;
@@ -52,8 +52,8 @@
     color: #30BE76;
     font-size: initial;
     position: absolute;
-    left: 345px;
-    top: 400px;
+    left: 395px;
+    top: 450px;
 }
 
 .logo {
