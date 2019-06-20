@@ -1,0 +1,73 @@
+.backgroud-image img{
+    max-width: 1149px;
+    float: right;
+    transform: scaleX(-1);
+    z-index: -1;
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.gradient {
+    background: linear-gradient(180deg, rgba(255,255,255,0.35057773109243695) 0%, rgba(255,255,255,0.865983893557423) 80%);
+    height: 860px;
+}
+
+.heading {
+    font-size: 40px;
+    font-family: NunitoSemibold;
+    width: 500px;
+    position: absolute;
+    top: 180px;
+    left: 80px;
+}
+
+.intro {
+    font-size: 14px;
+    position: absolute;
+    top: 325px;
+    left: 80px;
+    font-family: NunitoRegular;
+}
+
+.joinBtn {
+    width: 239px;
+    height: 50px;
+    background-color: #30BE76;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: initial;
+    position: absolute;
+    left: 80px;
+    top: 400px;
+}
+
+.learnBtn {
+    width: 239px;
+    height: 50px;
+    background-color: white;
+    border: 2px #30BE76 solid;
+    border-radius: 8px;
+    color: #30BE76;
+    font-size: initial;
+    position: absolute;
+    left: 345px;
+    top: 400px;
+}
+
+.logo {
+    position: absolute;
+    left: 85px;
+    top: 65px;
+    font-size: 20px;
+    color: black;
+    font-weight: bolder;
+    font-family: NunitoRegular;
+}
+
+.logo i {
+    color: #30BE76;
+    font-size: 25px;
+    margin-right: 5px;
+}
