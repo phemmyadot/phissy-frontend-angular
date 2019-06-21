@@ -1,0 +1,120 @@
+.main {
+    background-color: #F7F8FA;
+    height: 100%;
+}
+
+.col1 {
+    height: 100%;
+    width: 289px;
+    display: inline-block;
+    margin-left: 70px;
+    margin-top: 38px;
+    vertical-align: top;
+}
+
+.col2 {
+    height: 100%;
+    width: 599px;
+    display: inline-block;
+    margin-left: 19px;
+    margin-top: 38px;
+    margin-bottom: 38px;
+    vertical-align: top;
+}
+
+.col3 {
+    height: 100%;
+    width: 289px;
+    margin-left: 19px;
+    margin-top: 38px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.col1 .profile {
+    height: 204px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.col1 .today-list {
+    height: 251px;
+    background-color: white;
+    border-radius: 5px;
+    margin-top: 23px;
+}
+
+.col2 .top {
+    height: 76px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 1px 1px 8px -4px #0D3320;
+}
+
+.col2 .content {
+    height: 100%;
+    background-color: white;
+    border-radius: 5px;
+    margin-top: 23px;
+    padding: 1px 25px 25px 25px;
+}
+
+.col3 .live {
+    height: 236px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.col3 .most-active {
+    height: 107px;
+    background-color: white;
+    border-radius: 5px;
+    margin-top: 23px;
+}
+
+.col3 .sidebar-footer {
+    height: 98px;
+    background-color: white;
+    border-radius: 5px;
+    margin-top: 23px;
+}
+
+.col2 .content .post {
+    height: 378px;
+    width: 551px;
+    margin-top: 25px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 1px 1px 8px -4px #0D3320;
+}
+
+.col2 .content .people {
+    height: 100%;
+    width: 551px;
+}
+
+.col2 .content .people .people-card1 {
+    width: 174px;
+    height: 219px;
+    box-shadow: 1px 1px 8px -4px #0D3320;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.col2 .content .people .people-card2 {
+    width: 174px;
+    height: 219px;
+    box-shadow: 1px 1px 8px -4px #0D3320;
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 14.5px;
+}
+
+.col2 .content .people .people-card3 {
+    width: 174px;
+    height: 219px;
+    box-shadow: 1px 1px 8px -4px #0D3320;
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 14.5px;
+}
