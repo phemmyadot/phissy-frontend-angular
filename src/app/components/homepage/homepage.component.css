@@ -63,7 +63,7 @@
 }
 
 .col3 .most-active {
-    height: 113px;
+    height: 130px;
     background-color: white;
     border-radius: 5px;
     margin-top: 23px;
@@ -77,7 +77,7 @@
 }
 
 .col2 .content .post {
-    height: 398px;
+    height: 408px;
     /* width: 551px; */
     margin-top: 25px;
     background-color: white;
@@ -119,4 +119,29 @@
     font-family: NunitoRegular;
     font-size: 14px;
     color: #606060;
+}
+
+.liveLabel {
+    position: absolute;
+    left: 60px;
+    font-family: NunitoRegular;
+    font-size: 14px;
+    width: 37px;
+    top: 70px;
+    background-color: #F84971;
+    height: 20px;
+    text-align: center;
+    border-radius: 5px;
+    line-height: 1.5;
+    color: white;
+}
+
+.createRecipe {
+    float: right;
+    width: 128px;
+    height: 36px;
+    background-color: #30BE76;
+    border: none;
+    border-radius: 8px;
+    color: white;
 }
