@@ -2,21 +2,20 @@
     background-color: #F7F8FA;
     height: 100%;
 }
-
+.content-main {
+    max-width: 80%;
+    margin: 0 10%;
+}
 .col1 {
     height: 100%;
-    width: 289px;
     display: inline-block;
-    margin-left: 70px;
     margin-top: 38px;
     vertical-align: top;
 }
 
 .col2 {
     height: 100%;
-    width: 599px;
     display: inline-block;
-    margin-left: 19px;
     margin-top: 38px;
     margin-bottom: 38px;
     vertical-align: top;
@@ -24,28 +23,26 @@
 
 .col3 {
     height: 100%;
-    width: 289px;
-    margin-left: 19px;
     margin-top: 38px;
     display: inline-block;
     vertical-align: top;
 }
 
 .col1 .profile {
-    height: 204px;
+    height: 215px;
     background-color: white;
     border-radius: 5px;
 }
 
 .col1 .today-list {
-    height: 251px;
+    height: 265px;
     background-color: white;
     border-radius: 5px;
     margin-top: 23px;
 }
 
 .col2 .top {
-    height: 76px;
+    height: 80px;
     background-color: white;
     border-radius: 5px;
     box-shadow: 1px 1px 8px -4px #0D3320;
@@ -60,28 +57,28 @@
 }
 
 .col3 .live {
-    height: 236px;
+    height: 249px;
     background-color: white;
     border-radius: 5px;
 }
 
 .col3 .most-active {
-    height: 107px;
+    height: 113px;
     background-color: white;
     border-radius: 5px;
     margin-top: 23px;
 }
 
 .col3 .sidebar-footer {
-    height: 98px;
+    height: 103px;
     background-color: white;
     border-radius: 5px;
     margin-top: 23px;
 }
 
 .col2 .content .post {
-    height: 378px;
-    width: 551px;
+    height: 398px;
+    /* width: 551px; */
     margin-top: 25px;
     background-color: white;
     border-radius: 5px;
@@ -89,32 +86,13 @@
 }
 
 .col2 .content .people {
-    height: 100%;
-    width: 551px;
+    height: 273px;
+    /* width: 551px; */
 }
 
-.col2 .content .people .people-card1 {
-    width: 174px;
-    height: 219px;
+.col2 .content .people .people-card {
+    /* width: 174px; */
+    height: 231px;
     box-shadow: 1px 1px 8px -4px #0D3320;
-    display: inline-block;
     vertical-align: top;
-}
-
-.col2 .content .people .people-card2 {
-    width: 174px;
-    height: 219px;
-    box-shadow: 1px 1px 8px -4px #0D3320;
-    display: inline-block;
-    vertical-align: top;
-    margin-left: 14.5px;
-}
-
-.col2 .content .people .people-card3 {
-    width: 174px;
-    height: 219px;
-    box-shadow: 1px 1px 8px -4px #0D3320;
-    display: inline-block;
-    vertical-align: top;
-    margin-left: 14.5px;
 }

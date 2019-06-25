@@ -1,0 +1,31 @@
+.navbar {
+    max-width: 80%;
+    margin: 0 10%;
+    height: 80px;
+}
+
+.logo {
+    color: black;
+    font-weight: normal;
+    font-family: NunitoRegular;
+    text-decoration: none;
+}
+
+.logo i {
+    color: #30BE76;
+    margin-right: 10px;
+    font-size: 21px;
+}
+
+.search {
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 1px solid #ced4da;
+    border-radius: 0;
+    padding: 0 30px;
+}
+
+.search:focus {
+    box-shadow: none;
+}
