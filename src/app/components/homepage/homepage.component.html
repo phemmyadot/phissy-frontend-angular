@@ -2,207 +2,400 @@
   <div class="container-fluid content-main">
     <div class="row">
       <div class="col1 col-md-3">
-        <div class="profile" style="padding: 25px">
+        <div class="profile">
           <div class="row" style="margin: 0">
             <img
               src="../../../assets/images/avatar.jpg"
-              width="70"
-              style="border-radius: 50%;"
               alt=""
+              class="img-fluid"
             />
-            <div style="display: inline; margin-left: 20px;">
-              <p class="userName">Nick Evans</p>
-              <p class="status">Potato Master</p>
-              <p class="followers">
+            <div class="info">
+              <p class="userName bold16">Nick Evans</p>
+              <p class="status regular14">Potato Master</p>
+              <p class="followers regular14">
                 548 followers &nbsp; &nbsp; &#8226; &nbsp; &nbsp; 23k likes
               </p>
             </div>
           </div>
           <hr />
           <div style="display: inline-flex;">
-            <div style="margin-right: 73px; text-align: center;">
-              <p
-                style="font-family: NunitoBold; font-size: 20px; margin-bottom: 0;"
-              >
+            <div class="numbers">
+              <p style="margin-bottom: 0;" class="bold20">
                 20
               </p>
-              <p>Recipes</p>
+              <p class="regular14">Recipes</p>
             </div>
-            <div style="margin-right: 73px; text-align: center;">
-              <p
-                style="font-family: NunitoBold; font-size: 20px; margin-bottom: 0;"
-              >
+            <div class="numbers">
+              <p style="margin-bottom: 0;" class="bold20">
                 75
               </p>
-              <p>Saved</p>
+              <p class="regular14">Saved</p>
             </div>
-            <div style="text-align: center;">
-              <p
-                style="font-family: NunitoBold; font-size: 20px; margin-bottom: 0;"
-              >
+            <div class="numbers" style="margin-right: 0;">
+              <p style="margin-bottom: 0;" class="bold20">
                 248
               </p>
-              <p>Following</p>
+              <p class="regular14">Following</p>
             </div>
           </div>
         </div>
-        <div
-          class="today-list"
-          style="padding: 25px; font-family: NunitoRegular; font-size: 14px;"
-        >
-          <p style="font-family: NunitoBold; font-size: 16px;">
+        <div class="today-list">
+          <p class="bold16">
             Top 5 Recipe Today
           </p>
-          <p>Recipe Title 1</p>
-          <p>Recipe Title 2</p>
-          <p>Recipe Title 3</p>
-          <p>Recipe Title 4</p>
-          <p>Recipe Title 5</p>
+          <p class="regular14">Lorem ipsum dolor sit amet</p>
+          <p class="regular14">Consectetur adipiscing elit</p>
+          <p class="regular14">Suspendisse sit amet blandit</p>
+          <p class="regular14">Velit n lacinia eros nulla</p>
+          <p class="regular14">Sed dictum turpis lacinia non</p>
         </div>
       </div>
       <div class="col2 col-md-6">
-        <div class="top" style="padding: 25px;">
-          <p style="float: left; line-height: 2;">234 of your followers are onlne</p>
+        <div class="top">
+          <p class="regular14">234 of your followers are onlne</p>
           <button class="createRecipe">Create Recipe</button>
         </div>
         <div class="content">
           <div class="post">
             <div style="position: relative;">
-              <img src="../../../assets/images/recipe1.jpg" style="width: 100%; object-fit: none; height: 238px;" alt="">
-              <div style="background-color: #FFFFFF; position: absolute; height: 62px; width:100%; top: 0; opacity: .9; padding: 16px 25px; display: flex;">
-                  <img
-                  src="../../../assets/images/avatar.jpg"
+              <img
+                src="../../../assets/images/recipe1.jpg"
+                class="img-fluid image"
+                alt=""
+              />
+              <div class="top-div">
+                <img
+                  src="../../../assets/images/avatar (1).jpg"
                   width="32"
-                  style="border-radius: 50%;"
+                  class="round-img"
                   alt=""
                 />
                 <div style="margin-left: 15px;">
-                  <p style="margin-bottom: 6px; line-height: 1; font-family: NunitoRegular; font-size: 12px;">James Doe</p>
-                  <p style="margin-bottom: 0; line-height: 1; font-family: NunitoRegular; font-size: 12px; color: #767676;">2h ago</p>
+                  <p
+                    style="margin-bottom: 6px; line-height: 1;"
+                    class="regular12"
+                  >
+                    Daniele Doe
+                  </p>
+                  <p
+                    style="margin-bottom: 0; line-height: 1; color: #767676;"
+                    class="regular12"
+                  >
+                    20m ago
+                  </p>
                 </div>
               </div>
             </div>
-            <div style="padding: 25px; font-family: NunitoRegular; font-size: 14px;">
-              <p style="font-family: NunitoSemibold; font-size: 18px;">Title</p>
-              <p>Text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text </p>
-              <p style="margin-bottom: 0;">20 Likes &nbsp; &#8226; &nbsp; 9 Comments</p>
+            <div style="padding: 25px;" class="regular14">
+              <p class="semibold18" style="margin-bottom: 5px;">Sub Title</p>
+              <p style="margin-bottom: 23px;">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Suspendisse sit amet blandit velit. In lacinia eros nulla, sed
+                dictum turpis lacinia non.
+              </p>
+              <p style="margin-bottom: 0; float: left;">
+                74 <i class="far fa-heart like-comment"></i> &nbsp; &nbsp; 26
+                <i class="far fa-comment like-comment"></i>
+              </p>
+              <button
+                class="save-btn"
+                (click)="ngxSmartModalService.getModal('myModal1').open()"
+              >
+                + Save
+              </button>
             </div>
+            <ngx-smart-modal #myModal identifier="myModal1">
+              <div>
+                <p class="bold20">Save To</p>
+                <p class="regular14 modal-p">Categrory 1</p>
+                <p class="regular14 modal-p">Categrory 2</p>
+                <p class="regular14 modal-p">Categrory 3</p>
+                <p class="bold16 modal-add">+ Add New Categrory</p>
+              </div>
+            </ngx-smart-modal>
           </div>
           <div class="post">
             <div style="position: relative;">
-              <img src="../../../assets/images/recipe1.jpg" style="width: 100%; object-fit: none; height: 238px;" alt="">
-              <div style="background-color: #FFFFFF; position: absolute; height: 62px; width:100%; top: 0; opacity: .9; padding: 16px 25px; display: flex;">
-                  <img
-                  src="../../../assets/images/avatar.jpg"
+              <img
+                src="../../../assets/images/recipe2.jpg"
+                class="img-fluid image"
+                alt=""
+              />
+              <div class="top-div">
+                <img
+                  src="../../../assets/images/avatar (5).jpg"
                   width="32"
-                  style="border-radius: 50%;"
+                  class="round-img"
                   alt=""
                 />
                 <div style="margin-left: 15px;">
-                  <p style="margin-bottom: 6px; line-height: 1; font-family: NunitoRegular; font-size: 12px;">James Doe</p>
-                  <p style="margin-bottom: 0; line-height: 1; font-family: NunitoRegular; font-size: 12px; color: #767676;">2h ago</p>
+                  <p
+                    style="margin-bottom: 6px; line-height: 1;"
+                    class="regular12"
+                  >
+                    James Doe
+                  </p>
+                  <p
+                    style="margin-bottom: 0; line-height: 1; color: #767676;"
+                    class="regular12"
+                  >
+                    1h38m ago
+                  </p>
                 </div>
               </div>
             </div>
-            <div style="padding: 25px; font-family: NunitoRegular; font-size: 14px;">
-              <p style="font-family: NunitoSemibold; font-size: 18px;">Title</p>
-              <p>Text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text </p>
-              <p style="margin-bottom: 0;">20 Likes &nbsp; &#8226; &nbsp; 9 Comments</p>
+            <div style="padding: 25px;" class="regular14">
+              <p class="semibold18" style="margin-bottom: 5px;">Sub Title</p>
+              <p style="margin-bottom: 23px;">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Suspendisse sit amet blandit velit. In lacinia eros nulla, sed
+                dictum turpis lacinia non.
+              </p>
+              <p style="margin-bottom: 0; float: left;">
+                20 <i class="far fa-heart like-comment"></i> &nbsp; &nbsp; 9
+                <i class="far fa-comment like-comment"></i>
+              </p>
+              <button
+                class="save-btn"
+                (click)="ngxSmartModalService.getModal('myModal2').open()"
+              >
+                + Save
+              </button>
             </div>
+            <ngx-smart-modal #myModal identifier="myModal2">
+              <div>
+                <p class="bold20">Save To</p>
+                <p class="regular14 modal-p">Categrory 1</p>
+                <p class="regular14 modal-p">Categrory 2</p>
+                <p class="regular14 modal-p">Categrory 3</p>
+                <p class="bold16 modal-add">+ Add New Categrory</p>
+              </div>
+            </ngx-smart-modal>
           </div>
           <hr />
           <div class="people row">
-            <div class="col-md-4" style="display: inline-block;">
-              <div class="people-card"></div>
+            <div style="padding: 0 15px; width: 100%;">
+              <p class="bold16" style="float: left;">
+                People you might want to follow
+              </p>
+              <p class="bold16" style="float: right; color: #30BE76">
+                See all suggestions
+              </p>
             </div>
-            <div class="col-md-4" style="display: inline-block;">
-              <div class="people-card"></div>
-            </div>
-            <div class="col-md-4" style="display: inline-block;">
-              <div class="people-card"></div>
+            <div>
+              <div class="col-md-4" style="display: inline-block;">
+                <div class="people-card">
+                  <div>
+                    <img
+                      src="../../../assets/images/people-header (3).jpg"
+                      class="image"
+                      alt=""
+                    />
+                    <div class="image-layer"></div>
+                    <img
+                      src="../../../assets/images/avatar (1).jpg"
+                      class="round-img"
+                      alt=""
+                    />
+                  </div>
+                  <div style="margin: 35px 0 5px 0;">
+                    <p class="regular16 no-margintopbottom">Jennifer Doe</p>
+                  </div>
+                  <div style="display: inline-flex; text-align: center;">
+                    <div style="margin: 0 30px">
+                      <p class="regular14 no-margintopbottom">278</p>
+                      <p class="regular10 no-margintopbottom">recipes</p>
+                    </div>
+                    <div style="margin: 0 30px">
+                      <p class="regular14 no-margintopbottom">3k</p>
+                      <p class="regular10 no-margintopbottom">followers</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4" style="display: inline-block;">
+                <div class="people-card">
+                  <div>
+                    <img
+                      src="../../../assets/images/people-header (2).jpg"
+                      class="image"
+                      alt=""
+                    />
+                    <div class="image-layer"></div>
+                    <img
+                      src="../../../assets/images/avatar (4).jpg"
+                      class="round-img"
+                      alt=""
+                    />
+                  </div>
+                  <div style="margin: 35px 0 5px 0;">
+                    <p class="regular16 no-margintopbottom">Lisa Doe</p>
+                  </div>
+                  <div style="display: inline-flex; text-align: center;">
+                    <div style="margin: 0 30px">
+                      <p class="regular14 no-margintopbottom">28</p>
+                      <p class="regular10 no-margintopbottom">recipes</p>
+                    </div>
+                    <div style="margin: 0 30px">
+                      <p class="regular14 no-margintopbottom">246</p>
+                      <p class="regular10 no-margintopbottom">followers</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4" style="display: inline-block;">
+                <div class="people-card">
+                  <div>
+                    <img
+                      src="../../../assets/images/people-header (4).jpg"
+                      class="image"
+                      alt=""
+                    />
+                    <div class="image-layer"></div>
+                    <img
+                      src="../../../assets/images/avatar (5).jpg"
+                      class="round-img"
+                      alt=""
+                    />
+                  </div>
+                  <div style="margin: 35px 0 5px 0;">
+                    <p class="regular16 no-margintopbottom">Anthony Doe</p>
+                  </div>
+                  <div style="display: inline-flex; text-align: center;">
+                    <div style="margin: 0 30px">
+                      <p class="regular14 no-margintopbottom">318</p>
+                      <p class="regular10 no-margintopbottom">recipes</p>
+                    </div>
+                    <div style="margin: 0 30px">
+                      <p class="regular14 no-margintopbottom">8.3k</p>
+                      <p class="regular10 no-margintopbottom">followers</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
           <hr />
           <div class="post">
-              <div style="position: relative;">
-                <img src="../../../assets/images/recipe1.jpg" style="width: 100%; object-fit: none; height: 238px;" alt="">
-                <div style="background-color: #FFFFFF; position: absolute; height: 62px; width:100%; top: 0; opacity: .9; padding: 16px 25px; display: flex;">
-                    <img
-                    src="../../../assets/images/avatar.jpg"
-                    width="32"
-                    style="border-radius: 50%;"
-                    alt=""
-                  />
-                  <div style="margin-left: 15px;">
-                    <p style="margin-bottom: 6px; line-height: 1; font-family: NunitoRegular; font-size: 12px;">James Doe</p>
-                    <p style="margin-bottom: 0; line-height: 1; font-family: NunitoRegular; font-size: 12px; color: #767676;">2h ago</p>
-                  </div>
+            <div style="position: relative;">
+              <img
+                src="../../../assets/images/recipe3.jpg"
+                class="img-fluid image"
+                alt=""
+              />
+              <div class="top-div">
+                <img
+                  src="../../../assets/images/avatar (2).jpg"
+                  width="32"
+                  class="round-img"
+                  alt=""
+                />
+                <div style="margin-left: 15px;">
+                  <p
+                    style="margin-bottom: 6px; line-height: 1;"
+                    class="regular12"
+                  >
+                    Krystal Doe
+                  </p>
+                  <p
+                    style="margin-bottom: 0; line-height: 1; color: #767676;"
+                    class="regular12"
+                  >
+                    2h ago
+                  </p>
                 </div>
               </div>
-              <div style="padding: 25px; font-family: NunitoRegular; font-size: 14px;">
-                <p style="font-family: NunitoSemibold; font-size: 18px;">Title</p>
-                <p>Text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text </p>
-                <p style="margin-bottom: 0;">20 Likes &nbsp; &#8226; &nbsp; 9 Comments</p>
-              </div>
             </div>
+            <div style="padding: 25px;" class="regular14">
+              <p class="semibold18" style="margin-bottom: 5px;">Sub Title</p>
+              <p style="margin-bottom: 23px;">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Suspendisse sit amet blandit velit. In lacinia eros nulla, sed
+                dictum turpis lacinia non.
+              </p>
+              <p style="margin-bottom: 0; float: left;">
+                54 <i class="far fa-heart like-comment"></i> &nbsp; &nbsp; 20
+                <i class="far fa-comment like-comment"></i>
+              </p>
+              <button
+                class="save-btn"
+                (click)="ngxSmartModalService.getModal('myModal3').open()"
+              >
+                + Save
+              </button>
+            </div>
+            <ngx-smart-modal #myModal identifier="myModal3">
+              <div>
+                <p class="bold20">Save To</p>
+                <p class="regular14 modal-p">Categrory 1</p>
+                <p class="regular14 modal-p">Categrory 2</p>
+                <p class="regular14 modal-p">Categrory 3</p>
+                <p class="bold16 modal-add">+ Add New Categrory</p>
+              </div>
+            </ngx-smart-modal>
+          </div>
         </div>
       </div>
       <div class="col3 col-md-3">
-        <div class="live" style="padding: 25px;">
-          <p class="userName">Live cooking by Phissy</p>
-          <video
-            style="width: 100%; margin-top: 6px; border-radius: 15px;"
-            controls
-          >
+        <div class="live">
+          <p class="no-margintopbottom regular14">Live cooking by Phissy</p>
+          <video class="videoplayer" controls>
             <source src="../../../assets/images/video.mp4" type="video/mp4" />
             Your browser does not support HTML5 video.
           </video>
           <label class="liveLabel"> live </label>
         </div>
         <div class="most-active" style="padding: 25px;">
-          <p class="userName" style="margin-bottom: 15px;">Most active today</p>
+          <p class="no-margintopbottom regular14" style="margin-bottom: 15px;">
+            Most active today
+          </p>
           <img
             src="../../../assets/images/avatar.jpg"
             width="40"
-            style="border-radius: 50%;"
+            height="40"
+            class="round-img"
             alt=""
           />
           <img
-            src="../../../assets/images/avatar.jpg"
+            src="../../../assets/images/avatar (2).jpg"
             width="40"
-            style="border-radius: 50%; margin-left: 25px;"
+            height="40"
+            class="round-img"
+            style="margin-left: 25px;"
             alt=""
           />
           <img
-            src="../../../assets/images/avatar.jpg"
+            src="../../../assets/images/avatar (3).jpg"
             width="40"
-            style="border-radius: 50%; margin-left: 25px;"
+            height="40"
+            class="round-img"
+            style="margin-left: 25px;"
             alt=""
           />
           <img
-            src="../../../assets/images/avatar.jpg"
+            src="../../../assets/images/avatar (5).jpg"
             width="40"
-            style="border-radius: 50%; margin-left: 25px;"
+            height="40"
+            class="round-img"
+            style="margin-left: 25px;"
             alt=""
           />
           <img
-            src="../../../assets/images/avatar.jpg"
+            src="../../../assets/images/avatar (4).jpg"
             width="40"
-            style="border-radius: 50%; margin-left: 25px;"
+            height="40"
+            class="round-img"
+            style="margin-left: 25px;"
             alt=""
           />
         </div>
         <div class="sidebar-footer" style="padding: 25px;">
-          <div
-            style="display: flex; font-size: 12px; font-family: NunitoRegular;"
-          >
+          <div style="display: flex;" class="regular12">
             <p>About Scratch</p>
             <p style="margin-left: 41px;">Help Center</p>
             <p style="margin-left: 41px;">Privacy Policy</p>
           </div>
-          <p
-            style="font-family: NunitoRegular; font-size: 10px;margin-top: 6px;"
-          >
+          <p style="margin-top: 6px;" class="regular10">
             &#169; phissy by FMAmedia 2019
           </p>
         </div>

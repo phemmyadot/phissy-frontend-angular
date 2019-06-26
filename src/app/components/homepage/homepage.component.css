@@ -32,22 +32,44 @@
     height: 215px;
     background-color: white;
     border-radius: 5px;
+    padding: 25px
 }
 
+.col1 .profile img {
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+}
+
+.col1 .profile .info {
+    display: inline; 
+    margin-left: 20px;
+}
+
+.col1 .profile .numbers {
+    margin-right: 73px; 
+    text-align: center;
+}
 .col1 .today-list {
     height: 265px;
     background-color: white;
     border-radius: 5px;
     margin-top: 23px;
+    padding: 25px; 
 }
 
 .col2 .top {
     height: 80px;
     background-color: white;
     border-radius: 5px;
+    padding: 25px;
     box-shadow: 1px 1px 8px -4px #0D3320;
 }
 
+.col2 .top p {
+    float: left; 
+    line-height: 2.5;
+}
 .col2 .content {
     height: 100%;
     background-color: white;
@@ -60,6 +82,7 @@
     height: 249px;
     background-color: white;
     border-radius: 5px;
+    padding: 25px;
 }
 
 .col3 .most-active {
@@ -79,14 +102,58 @@
 .col2 .content .post {
     height: 408px;
     /* width: 551px; */
+    position: relative;
     margin-top: 25px;
     background-color: white;
     border-radius: 5px;
     box-shadow: 1px 1px 8px -4px #0D3320;
 }
 
+.col2 .content .post .image {
+    width: 100%; 
+    object-fit: none; 
+    height: 238px;
+}
+
+.col2 .content .people .image {
+    width: 100%; 
+    object-fit: cover; 
+    height: 110px;
+}
+
+.col2 .content .people .image-layer {
+    width: 100%; 
+    height: 47.62%;
+    background-color: white;
+    position: absolute;
+    top: 0;
+    opacity: .6;
+}
+
+.col2 .content .people .round-img {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top: 60px;
+    left: 63.53px;
+    box-shadow: 1px 1px 14px -6px #0D3320;
+    border: 5px solid white;
+}
+
+.col2 .content .post .top-div {
+    background-color: #FFFFFF; 
+    position: absolute; 
+    height: 62px; 
+    width:100%; 
+    top: 0; 
+    opacity: .9; 
+    padding: 16px 25px; 
+    display: flex;
+}
+
 .col2 .content .people {
     height: 273px;
+    margin-top: 10px;
     /* width: 551px; */
 }
 
@@ -95,29 +162,27 @@
     height: 231px;
     box-shadow: 1px 1px 8px -4px #0D3320;
     vertical-align: top;
+    position: relative;
+    text-align: center;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
 }
 
 
-.userName {
+.no-margintopbottom {
     margin-top: 0;
     margin-bottom: 0;
-    font-family: NunitoBold;
-    font-size: 16px;
 }
 
 .status {
     margin-top: 0;
     margin-bottom: 4px;
-    font-family: NunitoRegular;
-    font-size: 14px;
     color: #606060;
 }
 
 .followers {
     margin-top: 0;
     margin-bottom: 0;
-    font-family: NunitoRegular;
-    font-size: 14px;
     color: #606060;
 }
 
@@ -144,4 +209,91 @@
     border: none;
     border-radius: 8px;
     color: white;
+}
+
+.createRecipe:hover {
+    background-color: #FFFFFF;
+    color: #30BE76;
+    border: #30BE76 1px solid;
+}
+
+.like-comment:hover {
+    color: red;
+}
+
+.bold16 {
+    font-family: NunitoBold; 
+    font-size: 16px;
+}
+
+.regular14 {
+    font-family: NunitoRegular; 
+    font-size: 14px;
+}
+
+.regular16 {
+    font-family: NunitoRegular; 
+    font-size: 16px;
+}
+
+.bold20 {
+    font-family: NunitoBold; 
+    font-size: 20px;
+}
+
+.regular12 {
+    font-family: NunitoRegular; 
+    font-size: 12px;
+}
+.round-img {
+    border-radius: 50%;
+}
+
+.semibold18 {
+    font-family: NunitoSemibold; 
+    font-size: 18px;
+}
+
+.regular10 {
+    font-family: NunitoRegular; 
+    font-size: 10px;
+}
+
+.videoplayer {
+    width: 100%; 
+    margin-top: 6px; 
+    border-radius: 15px;
+}
+
+.save-btn {
+    float: right;
+    background-color: transparent;
+    border: 1px solid #30BE76;
+    border-radius: 5px;
+    width: 73px;
+    height: 26px;
+    color: #30BE76;
+}
+
+.save-btn:hover {
+    background-color: #30BE76;
+    color: #FFFFFF;
+}
+
+.modal-p {
+    padding: 4px 10px;
+    margin: 2px -10px;
+    line-height: 2;
+    margin-right: -10px;
+    border-radius: 10px;
+    height: 35px;
+}
+
+.modal-p:hover {
+    background-color: #30be7630;
+}
+
+.modal-add {
+    color: #30BE76; 
+    margin: 15px 0 8px 0;
 }

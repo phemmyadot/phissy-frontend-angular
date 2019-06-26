@@ -1,4 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
+@import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+@import "../node_modules/font-awesome/css/font-awesome.css";
+@import "~ngx-smart-modal/ngx-smart-modal";
+
 body {
     margin: 0!important;
 }
@@ -16,4 +20,35 @@ body {
 @font-face {
     font-family: 'NunitoBold';
     src: url("assets/fonts/Nunito-Bold.ttf");
+}
+
+
+.overlay.nsm-overlay-open {
+    position: absolute!important;
+    background-color: transparent!important;
+    /* background-color: rgba(0, 0, 0, 0.5); */
+}
+
+.nsm-dialog[class*=nsm-dialog-animation-] {
+    transition: none;
+    transition: none;
+    transition: none;
+}
+
+.nsm-content {
+    width: 100%;
+    margin: 70px 0;
+    border-radius: 10px;
+}
+
+.nsm-dialog {
+    max-width: 286px;
+}
+
+.nsm-body {
+    padding: 10px;
+}
+
+.nsm-dialog-btn-close img {
+    width: 10px;
 }
