@@ -9,6 +9,7 @@ import { SignupComponent } from './components/signup/signup.component';
 import { HomepageComponent } from './components/homepage/homepage.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { NgxSmartModalModule } from 'ngx-smart-modal';
+import { UserProfileComponent } from './components/user-profile/user-profile.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { NgxSmartModalModule } from 'ngx-smart-modal';
     LoginComponent,
     SignupComponent,
     HomepageComponent,
-    NavbarComponent
+    NavbarComponent,
+    UserProfileComponent
   ],
   imports: [
     BrowserModule,

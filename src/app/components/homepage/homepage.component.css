@@ -219,6 +219,7 @@
 
 .like-comment:hover {
     color: red;
+    transform: scale(1.1)
 }
 
 .bold16 {
@@ -263,6 +264,16 @@
     width: 100%; 
     margin-top: 6px; 
     border-radius: 15px;
+}
+
+.pointer{
+    cursor: pointer;
+    outline: none;
+}
+
+.pointer:hover {
+    transform: scale(1.005);
+    opacity: .5;
 }
 
 .save-btn {
