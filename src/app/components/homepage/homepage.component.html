@@ -60,7 +60,7 @@
       </div>
       <div class="col2 col-md-6">
         <div class="top">
-          <p class="regular14 pointer">234 of your followers are onlne</p>
+          <p class="regular14">234 of your followers are onlne</p>
           <button class="createRecipe">Create Recipe</button>
         </div>
         <div class="content">
@@ -101,10 +101,14 @@
                 Suspendisse sit amet blandit velit. In lacinia eros nulla, sed
                 dictum turpis lacinia non.
               </p>
-              <p style="margin-bottom: 0; float: left;">
-                74 <i class="far fa-heart like-comment"></i> &nbsp; &nbsp; 26
-                <i class="far fa-comment like-comment"></i>
-              </p>
+              <div style="display: flex;margin-bottom: 0; float: left;">
+                <p class="like-comment">
+                  74 <i class="far fa-heart"></i>
+                </p> &nbsp; &nbsp;
+                <p class="like-comment"> 26
+                  <i class="far fa-comment"></i>
+                </p>
+              </div>
               <button
                 class="save-btn"
                 (click)="ngxSmartModalService.getModal('myModal1').open()"
@@ -159,10 +163,14 @@
                 Suspendisse sit amet blandit velit. In lacinia eros nulla, sed
                 dictum turpis lacinia non.
               </p>
-              <p style="margin-bottom: 0; float: left;">
-                20 <i class="far fa-heart like-comment"></i> &nbsp; &nbsp; 9
-                <i class="far fa-comment like-comment"></i>
-              </p>
+              <div style="display: flex;margin-bottom: 0; float: left;">
+                <p class="like-comment">
+                  20 <i class="far fa-heart"></i>
+                </p> &nbsp; &nbsp;
+                <p class="like-comment"> 9
+                  <i class="far fa-comment"></i>
+                </p>
+              </div>
               <button
                 class="save-btn"
                 (click)="ngxSmartModalService.getModal('myModal2').open()"
@@ -186,7 +194,7 @@
               <p class="bold16" style="float: left;">
                 People you might want to follow
               </p>
-              <p class="bold16" style="float: right; color: #30BE76">
+              <p class="bold16 pointer" style="float: right; color: #30BE76">
                 See all suggestions
               </p>
             </div>
@@ -321,10 +329,14 @@
                 Suspendisse sit amet blandit velit. In lacinia eros nulla, sed
                 dictum turpis lacinia non.
               </p>
-              <p style="margin-bottom: 0; float: left;">
-                54 <i class="far fa-heart like-comment"></i> &nbsp; &nbsp; 20
-                <i class="far fa-comment like-comment"></i>
-              </p>
+              <div style="display: flex;margin-bottom: 0; float: left;">
+                <p class="like-comment">
+                  54 <i class="far fa-heart"></i>
+                </p> &nbsp; &nbsp;
+                <p class="like-comment"> 20
+                  <i class="far fa-comment"></i>
+                </p>
+              </div>
               <button
                 class="save-btn"
                 (click)="ngxSmartModalService.getModal('myModal3').open()"
@@ -347,7 +359,7 @@
       <div class="col3 col-md-3">
         <div class="live">
           <p class="no-margintopbottom regular14">Live cooking by Phissy</p>
-          <video class="videoplayer" controls>
+          <video class="videoplayer pointer" controls>
             <source src="../../../assets/images/video.mp4" type="video/mp4" />
             Your browser does not support HTML5 video.
           </video>
@@ -361,14 +373,14 @@
             src="../../../assets/images/avatar.jpg"
             width="40"
             height="40"
-            class="round-img"
+            class="round-img pointer"
             alt=""
           />
           <img
             src="../../../assets/images/avatar (2).jpg"
             width="40"
             height="40"
-            class="round-img"
+            class="round-img pointer"
             style="margin-left: 25px;"
             alt=""
           />
@@ -376,7 +388,7 @@
             src="../../../assets/images/avatar (3).jpg"
             width="40"
             height="40"
-            class="round-img"
+            class="round-img pointer"
             style="margin-left: 25px;"
             alt=""
           />
@@ -384,7 +396,7 @@
             src="../../../assets/images/avatar (5).jpg"
             width="40"
             height="40"
-            class="round-img"
+            class="round-img pointer"
             style="margin-left: 25px;"
             alt=""
           />
@@ -392,16 +404,16 @@
             src="../../../assets/images/avatar (4).jpg"
             width="40"
             height="40"
-            class="round-img"
+            class="round-img pointer"
             style="margin-left: 25px;"
             alt=""
           />
         </div>
         <div class="sidebar-footer" style="padding: 25px;">
           <div style="display: flex;" class="regular12">
-            <p>About Scratch</p>
-            <p style="margin-left: 41px;">Help Center</p>
-            <p style="margin-left: 41px;">Privacy Policy</p>
+            <p class="pointer">About Scratch</p>
+            <p class="pointer" style="margin-left: 41px;">Help Center</p>
+            <p class="pointer" style="margin-left: 41px;">Privacy Policy</p>
           </div>
           <p style="margin-top: 6px;" class="regular10">
             &#169; phissy by FMAmedia 2019

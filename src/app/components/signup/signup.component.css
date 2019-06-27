@@ -44,7 +44,7 @@
     margin-bottom: 5px!important;
 }
 
-.loginBtn {
+.signBtn {
     width: 100%;
     height: 60px;
     background-color: #30BE76;
@@ -53,6 +53,12 @@
     color: white;
     font-size: initial;
     margin-top: 30px;
+}
+
+.signBtn:hover {
+    background-color: #FFFFFF;
+    color: #30BE76;
+    border: #30BE76 1px solid;
 }
 
 .signup {
@@ -81,6 +87,17 @@
 .w3-input {
     padding: 0;
 }
+
+.pointer{
+    cursor: pointer;
+    outline: none;
+}
+
+.pointer:hover {
+    transform: scale(1.005);
+    opacity: .7;
+}
+
 @media screen and (max-width: 1366px) {
     .form {
         width: 308px;

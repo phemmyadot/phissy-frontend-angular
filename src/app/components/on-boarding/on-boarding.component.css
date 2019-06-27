@@ -43,11 +43,25 @@
     top: 450px;
 }
 
+/* .joinBtn:hover {
+    background-color: white;
+    border: 1px #30BE76 solid;
+    color: #30BE76;
+} */
+
+/* .joinBtn:hover ~ .learnBtn {
+    background-color: #30BE76;
+    border: none;
+    color: white;
+} */
+
+
+
 .learnBtn {
     width: 260px;
     height: 50px;
     background-color: white;
-    border: 2px #30BE76 solid;
+    border: 1px #30BE76 solid;
     border-radius: 8px;
     color: #30BE76;
     font-size: initial;
@@ -55,6 +69,17 @@
     left: 395px;
     top: 450px;
 }
+
+/* .learnBtn:hover ~ .joinBtn {
+    background-color: #FFFFFF;
+    border: none;
+    color: #30BE76;
+} */
+/* .learnBtn:hover {
+    background-color: #30BE76;
+    border: none;
+    color: white;
+} */
 
 .logo {
     position: absolute;
@@ -70,6 +95,16 @@
     color: #30BE76;
     font-size: 25px;
     margin-right: 5px;
+}
+
+.pointer{
+    cursor: pointer;
+    outline: none;
+}
+
+.pointer:hover {
+    transform: scale(1.005);
+    opacity: .7;
 }
 
 @media screen and (max-width: 1366px){

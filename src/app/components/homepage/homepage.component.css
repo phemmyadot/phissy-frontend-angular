@@ -166,8 +166,12 @@
     text-align: center;
     border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
+    cursor: pointer;
 }
 
+.col2 .content .people .people-card:hover {
+    transform: scale(1.06);
+}
 
 .no-margintopbottom {
     margin-top: 0;
@@ -218,8 +222,13 @@
 }
 
 .like-comment:hover {
-    color: red;
+    color: #30BE76;
     transform: scale(1.1)
+}
+
+.like-comment {
+    cursor: pointer;
+    margin-right: 30px;
 }
 
 .bold16 {
@@ -273,7 +282,7 @@
 
 .pointer:hover {
     transform: scale(1.005);
-    opacity: .5;
+    opacity: .7;
 }
 
 .save-btn {

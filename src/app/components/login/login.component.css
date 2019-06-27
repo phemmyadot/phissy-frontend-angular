@@ -55,6 +55,12 @@
     margin-top: 50px;
 }
 
+.loginBtn:hover {
+    background-color: #FFFFFF;
+    color: #30BE76;
+    border: #30BE76 1px solid;
+}
+
 .signup {
     color: #30BE76!important; 
     font-size: 20px!important;
@@ -81,6 +87,17 @@
 .w3-input {
     padding: 5px;
 }
+
+.pointer{
+    cursor: pointer;
+    outline: none;
+}
+
+.pointer:hover {
+    transform: scale(1.005);
+    opacity: .7;
+}
+
 @media screen and (max-width: 1366px) {
     .form {
         width: 308px;
@@ -158,3 +175,4 @@
         max-height: 650px;
     }
 }
+

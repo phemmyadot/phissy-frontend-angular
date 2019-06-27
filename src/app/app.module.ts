@@ -10,6 +10,7 @@ import { HomepageComponent } from './components/homepage/homepage.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { NgxSmartModalModule } from 'ngx-smart-modal';
 import { UserProfileComponent } from './components/user-profile/user-profile.component';
+import { SliderComponent } from './components/slider/slider.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { UserProfileComponent } from './components/user-profile/user-profile.com
     SignupComponent,
     HomepageComponent,
     NavbarComponent,
-    UserProfileComponent
+    UserProfileComponent,
+    SliderComponent
   ],
   imports: [
     BrowserModule,

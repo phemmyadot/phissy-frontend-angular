@@ -29,3 +29,13 @@
 .search:focus {
     box-shadow: none;
 }
+
+.pointer{
+    cursor: pointer;
+    outline: none;
+}
+
+.pointer:hover {
+    transform: scale(1.005);
+    opacity: .7;
+}
