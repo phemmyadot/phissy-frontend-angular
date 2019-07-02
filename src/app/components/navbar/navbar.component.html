@@ -1,34 +1,32 @@
 <div style="height: 83px;">
   <div style="box-shadow: 1px 1px 8px -6px #0D3320;">
     <div class="container-fluid navbar">
-      <div class="col-md-3">
+      <div  style="flex: 1;">
         <a [routerLink]="['/home']" class="logo pointer"
           ><i class="fas fa-concierge-bell"></i> Phissy</a
         >
       </div>
-      <div class="col-md-6">
+      <div style="flex: 2; position: relative;">
         <input class="form-control search" />
         <i
           class="fas fa-search pointer"
-          style="position: absolute;top: 10px;left: 20px;color: #000000;"
+          style="position: absolute;top: 10px;color: #000000;"
         ></i>
       </div>
-      <div class="col-md-3" style="font-size: 20px; padding-right: 0;">
+      <div class="nav-icons">
         <img
           [routerLink]="['/user-profile']"
           src="../../../assets/images/avatar.jpg"
           width="36"
-          style="border-radius: 50%;float: right; margin: 0 0 0 20px;"
+          style="border-radius: 50%;"
           alt=""
           class="pointer"
         />
         <i
-          class="far fa-envelope pointer"
-          style="float: right; margin: 0 20px; line-height: 2;"
+          class="far fa-envelope pointer icon-top"
         ></i>
         <i
-          class="far fa-bell pointer"
-          style="float: right; margin: 0 20px; line-height: 2;"
+          class="far fa-bell pointer icon-top"
         ></i>
       </div>
     </div>

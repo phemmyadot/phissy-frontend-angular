@@ -2,6 +2,7 @@
     max-width: 80%;
     margin: 0 10%;
     height: 80px;
+    display: flex;
 }
 
 .logo {
@@ -16,7 +17,17 @@
     margin-right: 10px;
     font-size: 21px;
 }
-
+.icon-top {
+    margin-left: 5%;
+    line-height: inherit;
+}
+.nav-icons {
+    font-size: 20px; 
+    padding-right: 0; 
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
 .search {
     border-top: none;
     border-right: none;
@@ -38,4 +49,14 @@
 .pointer:hover {
     transform: scale(1.005);
     opacity: .7;
+}
+
+@media screen and (max-width: 800px) {
+    .icon-top {
+        margin-left: 10%;
+    }
+    .navbar {
+        max-width: 100%;
+        margin: 0;
+    }
 }
