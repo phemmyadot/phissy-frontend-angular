@@ -27,13 +27,6 @@
     position: relative;
 }
 
-@media screen and (min-width: 900px) {
-    .content-row {
-        display: flex;
-        justify-content: space-between;
-    }
-}
-
 .col1 {
     height: 100%;
     box-sizing: border-box;
@@ -86,11 +79,42 @@
 .col2 .content {
     width: 100%;
     margin-top: 23px;
-    height: 1200px;
+    padding: 25px;
     background-color: #FFFFFF;
     border-radius: 8px;
 }
+.col2 .content .post {
+    box-shadow: 1px 1px 8px -4px #0D3320;
+    margin-bottom: 25px;
+    height: 338px;
+}
+.col2 .content .post .post-img img {
+    height: 220px;
+    width: 100%;
+    object-fit: cover;
+}
 
+.col2 .content .post .post-texts {
+    padding: 20px;
+}
+.col2 .content .post .post-texts .cook-btn {
+    flex: 1;
+    justify-content: flex-end; 
+    display: flex;
+}
+.col2 .content .post .post-texts .cook-btn button {
+    background-color: transparent;
+    border: 1px solid #30BE76;
+    border-radius: 5px;
+    width: 73px;
+    height: 26px;
+    color: #30BE76;
+    justify-content: center;
+}
+.col2 .content .post .post-texts .cook-btn button:hover {
+    background-color: #30BE76;
+    color: #FFFFFF;
+}
 .col2 .top {
     height: 215px;
 }
@@ -178,4 +202,27 @@
 .createRecipe:hover {
     background-color: #30BE76;
     color: #FFFFFF;
+}
+
+.col2 .content .post .post-texts .numbers {
+    display: flex; 
+    flex: 1;
+}
+@media screen and (min-width: 900px) {
+    .content-row {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+@media screen and (min-width: 1100px) {
+    .col2 .content .post {
+        flex-basis: 48.8%;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .col2 {
+        margin-top: 30px;
+    }
 }
