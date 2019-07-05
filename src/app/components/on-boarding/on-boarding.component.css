@@ -178,6 +178,11 @@
         bottom: 0;
         width: 100%;
     }
+    .main {
+        height: 100%;
+        width: 100%;
+        position: fixed;
+    }
     .heading {
         visibility: hidden !important;
         height: 0;
