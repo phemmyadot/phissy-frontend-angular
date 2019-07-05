@@ -12,7 +12,3 @@ pipelines:
             - npm install
             - npm run build --prod
             - npm run deploy
-          
-            - pipe: atlassian/firebase-deploy:0.3.0
-              variables:
-                FIREBASE_TOKEN: '1/lm2ZdLdbw4WQYzBvpk1k9h_NLcmYSrHuFQumZTlDPrk'
