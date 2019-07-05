@@ -168,6 +168,7 @@
     .gradient {
         height: -webkit-fill-available;
         width: 100%;
+        position: absolute;
         background: linear-gradient(360deg, rgba(255,255,255,0.35057773109243695) 0%, rgba(255,255,255,2.865984) 45%) !important;
     }
 }
@@ -205,6 +206,7 @@
     .gradient {
         height: -webkit-fill-available;
         width: 100%;
+        position: absolute;
         background: linear-gradient(360deg, rgba(255,255,255,0.35057773109243695) 0%, rgba(255,255,255,2.865984) 30%) !important;
     }
 }
