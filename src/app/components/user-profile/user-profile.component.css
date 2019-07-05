@@ -245,3 +245,208 @@
   line-height: 2;
   color: #30be76;
 }
+/* Tablets */
+@media screen and (max-width: 450px) {
+  /* .icon-top {
+      margin-left: 10%;
+  } */
+  .col1 .profile .info {
+      margin-left: 0 !important;
+      margin-top: 5px;
+  }
+
+  .main-bck {
+      visibility: hidden;
+  }
+  .gradient {
+      visibility: hidden;
+  }
+  .content-main {
+      max-width: 100%!important;
+      padding: 15px!important;
+  }
+  .main {
+      background-color: #FFFFFF!important;
+      padding: 0!important;
+  }
+  .col1 .setup {
+      /* height: 150px; */
+      margin-top: 0!important;
+      visibility: hidden;
+      height: 0;
+      padding: 0!important;
+  }
+  .col2 .top {
+      visibility: hidden;
+      height: 0!important;
+  }
+  .col2 .content {
+      margin-top: 0!important;
+      padding: 5px 0!important;
+  }
+  .col1 .mobile-profile {
+      justify-content: space-between !important;
+      display: flex;
+  }
+
+  .col2 .content .post {
+      height: 155px !important;
+      border-radius: 8px;
+      width: 47.8%;
+      margin-bottom: 15px !important;
+  }
+  .col2 .content .post .post-img img {
+      height: 120px !important;
+  }
+  .col2 .content .post .post-texts {
+      padding: 5px 25px !important;
+  }
+  .col2 .content .post p {
+      text-align: center;
+  }
+  .col1 .profile .numbers, .col1 .profile .followers {
+      margin-bottom: 0!important;
+      color: #b9b6b6;
+  }
+  .col1 .profile .status {
+      color: #b9b6b6;
+  }
+  .col1 .profile {
+      padding: 0!important;
+  }
+  .post-cook-section {
+      visibility: hidden;
+      height: 0;
+  }
+  .mobile-heading2 {
+      visibility: hidden;
+      height: 0;
+  }
+}
+
+@media screen and (min-width: 451px) and (max-width: 1024px) {
+  /* .icon-top {
+      margin-left: 10%;
+  } */
+ 
+  .search {
+      border: none !important;
+  }
+  .col1 .profile .info {
+      margin-left: 0 !important;
+      margin-top: 5px;
+  }
+  .tab-order1 {
+      order: 2;
+      text-align: center;
+  }
+  .tab-order2 {
+      order: 1;
+      flex: 1 !important;
+  }
+  .tab-order3 {
+      order: 3;
+  }
+
+  .col1 .mobile-profile {
+      justify-content: space-between !important;
+      display: flex;
+  }
+  .main-bck {
+      visibility: hidden;
+  }
+  .gradient {
+      visibility: hidden;
+  }
+  .content-main {
+      max-width: 100%!important;
+      padding: 15px!important;
+  }
+  .main {
+      background-color: #FFFFFF!important;
+      padding: 0!important;
+  }
+  .col1 .setup {
+      /* height: 150px; */
+      margin-top: 0!important;
+      visibility: hidden;
+      height: 0;
+      padding: 0!important;
+  }
+  .col2 .top {
+      visibility: hidden;
+      height: 0!important;
+  }
+  .col2 .content {
+      margin-top: 0!important;
+      padding: 5px 0!important;
+  }
+
+  .col2 .content .post {
+      height: 183px !important;
+      border-radius: 8px;
+      width: 49%;
+      margin-bottom: 20px !important;
+  }
+  .col2 .content .post .post-img img {
+      height: 148px !important;
+  }
+  .col2 .content .post .post-texts {
+      padding: 5px 25px !important;
+  }
+  .col2 .content .post p {
+      text-align: center;
+  }
+  .col1 .profile .numbers, .col1 .profile .followers {
+      margin-bottom: 0!important;
+      color: #b9b6b6;
+  }
+  .col1 .profile .status {
+      color: #b9b6b6;
+  }
+  .col1 .profile {
+      padding: 0!important;
+  }
+  .post-cook-section {
+      visibility: hidden;
+      height: 0;
+  }
+}
+
+@media screen and (min-width: 455px) {
+  .mobile-edit {
+      visibility: hidden;
+      height: 0;
+  }
+  .mobile-heading {
+      visibility: hidden;
+      height: 0;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .content-row {
+      display: flex !important;
+      justify-content: space-between !important;
+  }
+  .col2 .content .post {
+      flex-basis: 48.8% !important;
+  } 
+  .mobile-line {
+      padding: 0 !important;
+      visibility: hidden;
+  }
+  .mobile-heading2 {
+      visibility: hidden;
+      height: 0;
+  }
+  .col1 .profile .active {
+      /* margin-right: 73px;  */
+      border-bottom: 5px solid #FFFFFF !important;
+  }
+}
+@media screen and (min-width: 1280px) and (max-width: 1600px) {
+  .col1 .profile .info {
+      margin-left: 0 !important;
+      margin-top: 5px;
+  }
+}
