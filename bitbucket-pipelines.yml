@@ -13,8 +13,6 @@ pipelines:
             - npm install -g @angular/cli
             - npm install -g firebase-tools
             - npm run build --prod
-            - npm run deploy
-            - pipe: atlassian/firebase-deploy:0.3.0
-              variables:
-                  FIREBASE_TOKEN: $FIREBASE_TOKEN
+            - firebase init
+            - firebase deploy
 
