@@ -8,6 +8,11 @@
     height: auto;
 }
 
+.main {
+    height: 100% !important;
+    width: 100% !important;
+    position: fixed !important;
+}
 .gradient {
     background: linear-gradient(180deg, rgba(255,255,255,0.35057773109243695) 0%, rgba(255,255,255,0.865983893557423) 80%);
     height: 860px;
@@ -178,11 +183,7 @@
         bottom: 0;
         width: 100%;
     }
-    .main {
-        height: 100% !important;
-        width: 100% !important;
-        position: fixed !important;
-    }
+   
     .heading {
         visibility: hidden !important;
         height: 0;
