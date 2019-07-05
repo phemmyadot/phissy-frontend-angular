@@ -1,3 +1,7 @@
+.navbar-cont {
+    height: 83px;
+}
+
 .navbar {
     max-width: 80%;
     margin: 0 10%;
@@ -18,7 +22,7 @@
     font-size: 21px;
 }
 .icon-top {
-    margin-left: 5%;
+    margin-right: 10%;
     line-height: inherit;
 }
 .nav-icons {
@@ -27,6 +31,7 @@
     flex: 1;
     display: flex;
     justify-content: flex-end;
+    align-items: flex-end;
 }
 .search {
     border-top: none;
@@ -51,12 +56,13 @@
     opacity: .7;
 }
 
-@media screen and (max-width: 800px) {
-    .icon-top {
-        margin-left: 10%;
-    }
-    .navbar {
-        max-width: 100%;
-        margin: 0;
-    }
+.tab-order1 {
+    flex: 1;
+}
+.tab-order2 {
+    flex: 2; 
+    position: relative;
+}
+.tab-order3 {
+    flex: 1;
 }

@@ -1,19 +1,25 @@
-<div style="height: 83px;">
+<div class="navbar-cont">
   <div style="box-shadow: 1px 1px 8px -6px #0D3320;">
     <div class="container-fluid navbar">
-      <div  style="flex: 1;">
+      <div  class="tab-order1">
         <a [routerLink]="['/home']" class="logo pointer"
           ><i class="fas fa-concierge-bell"></i> Phissy</a
         >
       </div>
-      <div style="flex: 2; position: relative;">
+      <div class="tab-order2">
         <input class="form-control search" />
         <i
           class="fas fa-search pointer"
           style="position: absolute;top: 10px;color: #000000;"
         ></i>
       </div>
-      <div class="nav-icons">
+      <div class="tab-order3 nav-icons">
+          <i
+            class="far fa-bell pointer icon-top"
+          ></i>
+        <i
+          class="far fa-envelope pointer icon-top"
+        ></i>
         <img
           [routerLink]="['/user-profile']"
           src="../../../assets/images/avatar.jpg"
@@ -22,12 +28,6 @@
           alt=""
           class="pointer"
         />
-        <i
-          class="far fa-envelope pointer icon-top"
-        ></i>
-        <i
-          class="far fa-bell pointer icon-top"
-        ></i>
       </div>
     </div>
   </div>
