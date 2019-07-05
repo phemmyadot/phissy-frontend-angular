@@ -1,172 +1,217 @@
 <div class="main">
   <div class="container-fluid content-main">
     <div class="content-row">
-        <div class="col1">
-            <div class="mobile-heading">
-              <p class="bold24">Kitchen</p>
-              <p class="settings pointer bold16"><i class="fas fa-cog"></i> &nbsp;Settings</p>
-            </div>
-            <div class="mobile-heading2">
-              <p class="pointer"><i class="fas fa-chevron-left"></i> Back</p>
-              <i class="fas fa-pencil-alt pointer"></i>
-            </div>
-            <div class="profile">
-              <div class="mobile-profile">
-              <div class="row details">
-                <img
+      <div class="col1">
+        <div class="mobile-heading">
+          <p class="bold24">Kitchen</p>
+          <p class="settings pointer bold16">
+            <i class="fas fa-cog"></i> &nbsp;Settings
+          </p>
+        </div>
+        <div class="mobile-heading2">
+          <p class="pointer"><i class="fas fa-chevron-left"></i> Back</p>
+          <i class="fas fa-pencil-alt pointer"></i>
+        </div>
+        <div class="profile">
+          <div class="mobile-profile">
+            <div class="row details">
+              <img
+                [routerLink]="['/user-profile']"
+                src="../../../assets/images/avatar.jpg"
+                alt=""
+                class="img-fluid pointer"
+              />
+              <div class="info">
+                <p
                   [routerLink]="['/user-profile']"
-                  src="../../../assets/images/avatar.jpg"
-                  alt=""
-                  class="img-fluid pointer"
-                />
-                <div class="info">
-                  <p [routerLink]="['/user-profile']" class="pointer bold16" style="margin-bottom: 0;">
-                    Nick Evans
+                  class="pointer bold16"
+                  style="margin-bottom: 0;"
+                >
+                  Nick Evans
+                </p>
+                <p class="status pointer regular14">Potato Master</p>
+                <div style="display: flex;">
+                  <p class="followers regular14 pointer">
+                    548 followers &nbsp; &nbsp;
                   </p>
-                  <p class="status pointer regular14">Potato Master</p>
-                  <div style="display: flex;">
-                    <p class="followers regular14 pointer">
-                      548 followers &nbsp; &nbsp;
+                  <p class="followers regular14 pointer">
+                    &#8226; &nbsp; &nbsp; 23k likes
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="mobile-edit pointer">
+              <i class="fas fa-pencil-alt"></i>
+            </div>
+          </div>
+          <hr />
+          <div style="display: flex; justify-content: space-between;">
+            <div class="numbers active pointer">
+              <p style="margin-bottom: 0;" class="bold20">
+                20
+              </p>
+              <p class="regular14" style="margin-bottom: 5px;">Recipes</p>
+            </div>
+            <div class="numbers pointer">
+              <p style="margin-bottom: 0;" class="bold20">
+                75
+              </p>
+              <p class="regular14" style="margin-bottom: 5px;">Saved</p>
+            </div>
+            <div class="numbers pointer" style="margin-right: 0;">
+              <p style="margin-bottom: 0;" class="bold20">
+                248
+              </p>
+              <p class="regular14" style="margin-bottom: 5px;">Following</p>
+            </div>
+          </div>
+        </div>
+        <div class="mobile-line"><hr /></div>
+        <div class="setup">
+          <p class="regular16 pointer">
+            <i class="fas fa-pencil-alt"></i> &nbsp; Edit Profile
+          </p>
+          <p class="regular16 pointer">
+            <i class="fas fa-cog"></i> &nbsp; Settings
+          </p>
+          <p class="regular16 pointer">
+            <i class="fas fa-sign-out-alt"></i> &nbsp; Log Out
+          </p>
+        </div>
+      </div>
+      <div class="col2">
+        <div class="top">
+          <div style="display: flex; justify-content: space-between;">
+            <p class="bold32">My Recipes</p>
+            <button class="createRecipe">+ Add New</button>
+          </div>
+        </div>
+        <div class="content">
+          <div
+            class="post-cont"
+            style="display: flex; justify-content: space-between; flex-wrap: wrap;"
+          >
+            <div class="post">
+              <div class="post-img pointer">
+                <img
+                  src="../../../assets/images/people-header (1).jpg"
+                  alt=""
+                />
+              </div>
+              <div class="post-texts">
+                <p class="pointer semibold18">Topic</p>
+                <div style="display: flex;" class="post-cook-section">
+                  <div class="numbers">
+                    <p style="flex: 1;" class="pointer regular14">5 mins</p>
+                    <p style="flex: 1;" class="pointer regular14">
+                      3 Ingredients
                     </p>
-                    <p class="followers regular14 pointer">
-                      &#8226; &nbsp; &nbsp; 23k likes
-                    </p>
+                  </div>
+                  <div class="cook-btn regular14">
+                    <button>Cook</button>
                   </div>
                 </div>
               </div>
-                  <div class="mobile-edit pointer"><i class="fas fa-pencil-alt"></i></div>
+            </div>
+            <div class="post">
+              <div class="post-img pointer">
+                <img
+                  src="../../../assets/images/people-header (2).jpg"
+                  alt=""
+                />
               </div>
-              <hr />
-              <div style="display: flex; justify-content: space-between;">
-                <div class="numbers active pointer">
-                  <p style="margin-bottom: 0;" class="bold20">
-                    20
-                  </p>
-                  <p class="regular14" style="margin-bottom: 5px;">Recipes</p>
-                </div>
-                <div class="numbers pointer">
-                  <p style="margin-bottom: 0;" class="bold20">
-                    75
-                  </p>
-                  <p class="regular14" style="margin-bottom: 5px;">Saved</p>
-                </div>
-                <div class="numbers pointer" style="margin-right: 0;">
-                  <p style="margin-bottom: 0;" class="bold20">
-                    248
-                  </p>
-                  <p class="regular14" style="margin-bottom: 5px;">Following</p>
+              <div class="post-texts">
+                <p class="pointer semibold18">Topic</p>
+                <div style="display: flex;" class="post-cook-section">
+                  <div class="numbers">
+                    <p style="flex: 1;" class="pointer regular14">19 hours</p>
+                    <p style="flex: 1;" class="pointer regular14">
+                      7 Ingredients
+                    </p>
+                  </div>
+                  <div class="cook-btn regular14">
+                    <button>Cook</button>
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="mobile-line"><hr></div>
-            <div class="setup">
-              <p class="regular16 pointer"><i class="fas fa-pencil-alt"></i> &nbsp; Edit Profile</p>
-              <p class="regular16 pointer"><i class="fas fa-cog"></i> &nbsp; Settings</p>
-              <p class="regular16 pointer"><i class="fas fa-sign-out-alt"></i> &nbsp; Log Out</p>
+            <div class="post">
+              <div class="post-img pointer">
+                <img
+                  src="../../../assets/images/people-header (3).jpg"
+                  alt=""
+                />
+              </div>
+              <div class="post-texts">
+                <p class="pointer semibold18">Topic</p>
+                <div style="display: flex;" class="post-cook-section">
+                  <div class="numbers">
+                    <p style="flex: 1;" class="pointer regular14">1 days</p>
+                    <p style="flex: 1;" class="pointer regular14">
+                      2 Ingredients
+                    </p>
+                  </div>
+                  <div class="cook-btn regular14">
+                    <button>Cook</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="post">
+              <div class="post-img pointer">
+                <img
+                  src="../../../assets/images/people-header (4).jpg"
+                  alt=""
+                />
+              </div>
+              <div class="post-texts">
+                <p class="pointer semibold18">Topic</p>
+                <div style="display: flex;" class="post-cook-section">
+                  <div class="numbers">
+                    <p style="flex: 1;" class="pointer regular14">3 days</p>
+                    <p style="flex: 1;" class="pointer regular14">
+                      5 Ingredients
+                    </p>
+                  </div>
+                  <div class="cook-btn regular14">
+                    <button>Cook</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="post">
+              <div class="post-img pointer">
+                <img
+                  src="../../../assets/images/people-header (1).jpg"
+                  alt=""
+                />
+              </div>
+              <div class="post-texts">
+                <p class="pointer semibold18">Topic</p>
+                <div style="display: flex;" class="post-cook-section">
+                  <div class="numbers">
+                    <p style="flex: 1;" class="pointer regular14">5 days</p>
+                    <p style="flex: 1;" class="pointer regular14">
+                      6 Ingredients
+                    </p>
+                  </div>
+                  <div class="cook-btn regular14">
+                    <button>Cook</button>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="col2">
-            <div class="top">
-              <div style="display: flex; justify-content: space-between;">
-                <p class="bold32">My Recipes</p>
-                <button class="createRecipe">+ Add New</button>
-              </div>
-            </div>
-             <div class="content">
-               <div class="post-cont" style="display: flex; justify-content: space-between; flex-wrap: wrap;">
-                 
-                 <div class="post">
-                    <div class="post-img pointer">
-                      <img src="../../../assets/images/people-header (1).jpg" alt="">
-                    </div>
-                    <div class="post-texts">
-                      <p class="pointer semibold18">Topic</p>
-                      <div style="display: flex;" class="post-cook-section">
-                        <div class="numbers">
-                          <p style="flex: 1;" class="pointer regular14">5 mins</p>
-                        <p style="flex: 1;" class="pointer regular14">3 Ingredients</p>
-                        </div>
-                        <div class="cook-btn regular14">
-                          <button>Cook</button>
-                        </div>
-                      </div>
-                    </div>
-                 </div>
-                 <div class="post">
-                    <div class="post-img pointer">
-                      <img src="../../../assets/images/people-header (2).jpg" alt="">
-                    </div>
-                    <div class="post-texts">
-                      <p class="pointer semibold18">Topic</p>
-                      <div style="display: flex;" class="post-cook-section">
-                        <div class="numbers">
-                          <p style="flex: 1;" class="pointer regular14">19 hours</p>
-                        <p style="flex: 1;" class="pointer regular14">7 Ingredients</p>
-                        </div>
-                        <div class="cook-btn regular14">
-                          <button>Cook</button>
-                        </div>
-                      </div>
-                    </div>
-                 </div>
-                 <div class="post">
-                    <div class="post-img pointer">
-                      <img src="../../../assets/images/people-header (3).jpg" alt="">
-                    </div>
-                    <div class="post-texts">
-                      <p class="pointer semibold18">Topic</p>
-                      <div style="display: flex;" class="post-cook-section">
-                        <div class="numbers">
-                          <p style="flex: 1;" class="pointer regular14">1 days</p>
-                        <p style="flex: 1;" class="pointer regular14">2 Ingredients</p>
-                        </div>
-                        <div class="cook-btn regular14">
-                          <button>Cook</button>
-                        </div>
-                      </div>
-                    </div>
-                 </div>
-                 <div class="post">
-                    <div class="post-img pointer">
-                      <img src="../../../assets/images/people-header (4).jpg" alt="">
-                    </div>
-                    <div class="post-texts">
-                      <p class="pointer semibold18">Topic</p>
-                      <div style="display: flex;" class="post-cook-section">
-                        <div class="numbers">
-                          <p style="flex: 1;" class="pointer regular14">3 days</p>
-                        <p style="flex: 1;" class="pointer regular14">5 Ingredients</p>
-                        </div>
-                        <div class="cook-btn regular14">
-                          <button>Cook</button>
-                        </div>
-                      </div>
-                    </div>
-                 </div>
-                 <div class="post">
-                    <div class="post-img pointer">
-                      <img src="../../../assets/images/people-header (1).jpg" alt="">
-                    </div>
-                    <div class="post-texts">
-                      <p class="pointer semibold18">Topic</p>
-                      <div style="display: flex;" class="post-cook-section">
-                        <div class="numbers">
-                          <p style="flex: 1;" class="pointer regular14">5 days</p>
-                        <p style="flex: 1;" class="pointer regular14">6 Ingredients</p>
-                        </div>
-                        <div class="cook-btn regular14">
-                          <button>Cook</button>
-                        </div>
-                      </div>
-                    </div>
-                 </div>
-               </div>
-             </div>
-          </div>
+        </div>
+      </div>
     </div>
   </div>
   <div>
-    <img class="main-bck" src="../../../assets/images/user-profile-bck.jpeg" alt="">
+    <img
+      class="main-bck"
+      src="../../../assets/images/user-profile-bck.jpeg"
+      alt=""
+    />
   </div>
   <div class="gradient"></div>
 </div>

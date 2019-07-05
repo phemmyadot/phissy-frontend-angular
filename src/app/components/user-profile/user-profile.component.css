@@ -1,245 +1,247 @@
 .main {
-    position: relative;
-    background-color: #F7F8FA;
-    padding: 50px 0;
+  position: relative;
+  background-color: #f7f8fa;
+  padding: 50px 0;
 }
 
 .main-bck {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    position: absolute;
-    top: 0;
-    max-height: 405px;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  max-height: 405px;
 }
 
 .gradient {
-    position: absolute;
-    height: 405px;
-    width: 100%;
-    background: linear-gradient(180deg, rgba(247,248,250,0.35057773109243695) -39%, rgba(247,248,250,10.065984) 66%);
-    top: 0
+  position: absolute;
+  height: 405px;
+  width: 100%;
+  background: linear-gradient(
+    180deg,
+    rgba(247, 248, 250, 0.35057773109243695) -39%,
+    rgba(247, 248, 250, 10.065984) 66%
+  );
+  top: 0;
 }
 
 .content-main {
-    max-width: 80%;
-    z-index: 1;
-    position: relative;
+  max-width: 80%;
+  z-index: 1;
+  position: relative;
 }
 
 .col1 {
-    height: 100%;
-    box-sizing: border-box;
-    /* display: inline-block; */
-    vertical-align: top;
-    /* flex: 1; */
-    flex-basis: 25%;
+  height: 100%;
+  box-sizing: border-box;
+  /* display: inline-block; */
+  vertical-align: top;
+  /* flex: 1; */
+  flex-basis: 25%;
 }
 
 .col1 .profile {
-    /* height: 215px; */
-    background-color: white;
-    border-radius: 5px;
-    padding: 25px
+  /* height: 215px; */
+  background-color: white;
+  border-radius: 5px;
+  padding: 25px;
 }
 
 .col1 .profile .details {
-    display: flex;
-    margin: 0;
-    justify-content: flex-start;
+  display: flex;
+  margin: 0;
+  justify-content: flex-start;
 }
 
 .col1 .profile img {
-    border-radius: 50%;
-    width: 70px;
-    height: 70px;
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
 }
 
 .col1 .profile .info {
-    display: inline; 
+  display: inline;
 }
 .col1 .profile .details img {
-    margin-right: 20px;
+  margin-right: 20px;
 }
 
 .col1 .profile .numbers {
-    /* margin-right: 73px;  */
-    text-align: center;
-    flex: 1;
+  /* margin-right: 73px;  */
+  text-align: center;
+  flex: 1;
 }
 .col1 .profile .active {
-    /* margin-right: 73px;  */
-    border-bottom: 5px solid #30BE76;
+  /* margin-right: 73px;  */
+  border-bottom: 5px solid #30be76;
 }
 
 .col1 .setup {
-    /* height: 150px; */
-    background-color: white;
-    border-radius: 5px;
-    margin-top: 23px;
-    padding: 25px; 
+  /* height: 150px; */
+  background-color: white;
+  border-radius: 5px;
+  margin-top: 23px;
+  padding: 25px;
 }
 
 .col2 {
-    box-sizing: border-box;
-    height: 100%;
-    /* display: inline-block; */
-    /* flex: 3; */
-    flex-basis: 73%;
-    vertical-align: top;
+  box-sizing: border-box;
+  height: 100%;
+  /* display: inline-block; */
+  /* flex: 3; */
+  flex-basis: 73%;
+  vertical-align: top;
 }
 
 .col2 .content {
-    width: 100%;
-    margin-top: 23px;
-    padding: 25px;
-    background-color: #FFFFFF;
-    border-radius: 8px;
+  width: 100%;
+  margin-top: 23px;
+  padding: 25px;
+  background-color: #ffffff;
+  border-radius: 8px;
 }
 .col2 .content .post {
-    box-shadow: 1px 1px 8px -4px #0D3320;
-    margin-bottom: 25px;
-    height: 338px;
-    border-radius: 8px;
+  box-shadow: 1px 1px 8px -4px #0d3320;
+  margin-bottom: 25px;
+  height: 338px;
+  border-radius: 8px;
 }
 .col2 .content .post .post-img img {
-    height: 220px;
-    width: 100%;
-    object-fit: cover;
-    border-radius: 8px 8px 0 0;
+  height: 220px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 8px 8px 0 0;
 }
 
 .col2 .content .post .post-texts {
-    padding: 20px;
+  padding: 20px;
 }
 .col2 .content .post .post-texts .cook-btn {
-    flex: 1;
-    justify-content: flex-end; 
-    display: flex;
+  flex: 1;
+  justify-content: flex-end;
+  display: flex;
 }
 .col2 .content .post .post-texts .cook-btn button {
-    background-color: transparent;
-    border: 1px solid #30BE76;
-    border-radius: 5px;
-    width: 73px;
-    height: 26px;
-    color: #30BE76;
-    justify-content: center;
+  background-color: transparent;
+  border: 1px solid #30be76;
+  border-radius: 5px;
+  width: 73px;
+  height: 26px;
+  color: #30be76;
+  justify-content: center;
 }
 .col2 .content .post .post-texts .cook-btn button:hover {
-    background-color: #30BE76;
-    color: #FFFFFF;
+  background-color: #30be76;
+  color: #ffffff;
 }
 .col2 .top {
-    height: 215px;
+  height: 215px;
 }
 
-
 .bold16 {
-    font-family: NunitoBold; 
-    font-size: 16px;
+  font-family: NunitoBold;
+  font-size: 16px;
 }
 
 .regular14 {
-    font-family: NunitoRegular; 
-    font-size: 14px;
+  font-family: NunitoRegular;
+  font-size: 14px;
 }
 
 .regular16 {
-    font-family: NunitoRegular; 
-    font-size: 16px;
+  font-family: NunitoRegular;
+  font-size: 16px;
 }
 
 .bold20 {
-    font-family: NunitoBold; 
-    font-size: 20px;
+  font-family: NunitoBold;
+  font-size: 20px;
 }
 
 .bold24 {
-    font-family: NunitoBold;
-    font-size: 24px;
+  font-family: NunitoBold;
+  font-size: 24px;
 }
 
 .bold32 {
-    font-family: NunitoBold; 
-    font-size: 32px;
+  font-family: NunitoBold;
+  font-size: 32px;
 }
 
 .regular12 {
-    font-family: NunitoRegular; 
-    font-size: 12px;
+  font-family: NunitoRegular;
+  font-size: 12px;
 }
 .round-img {
-    border-radius: 50%;
+  border-radius: 50%;
 }
 
 .semibold18 {
-    font-family: NunitoSemibold; 
-    font-size: 18px;
+  font-family: NunitoSemibold;
+  font-size: 18px;
 }
 
 .regular10 {
-    font-family: NunitoRegular; 
-    font-size: 10px;
+  font-family: NunitoRegular;
+  font-size: 10px;
 }
 
 .no-margintopbottom {
-    margin-top: 0;
-    margin-bottom: 0;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .status {
-    margin-top: 0;
-    /* margin-bottom: 4px;   */
-    color: #606060;
+  margin-top: 0;
+  /* margin-bottom: 4px;   */
+  color: #606060;
 }
 
 .followers {
-    margin-top: 0;
-    margin-bottom: 0;
-    color: #606060;
+  margin-top: 0;
+  margin-bottom: 0;
+  color: #606060;
 }
 
 .createRecipe {
-    float: right;
-    width: 126px;
-    height: 36px;
-    background-color: #FFFFFF;
-    border: 1px solid #30BE76;
-    border-radius: 8px;
-    color: #30BE76;
+  float: right;
+  width: 126px;
+  height: 36px;
+  background-color: #ffffff;
+  border: 1px solid #30be76;
+  border-radius: 8px;
+  color: #30be76;
 }
 
 .createRecipe:hover {
-    background-color: #30BE76;
-    color: #FFFFFF;
+  background-color: #30be76;
+  color: #ffffff;
 }
 
 .col2 .content .post .post-texts .numbers {
-    display: flex; 
-    flex: 1;
+  display: flex;
+  flex: 1;
 }
 
 .mobile-line {
-    margin-top: -16px;
+  margin-top: -16px;
 }
 .mobile-heading {
-    display: flex;
-    justify-content: space-between;
-    padding: 0;
-    align-items: center;
-    margin-bottom: 25px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  align-items: center;
+  margin-bottom: 25px;
 }
 .mobile-heading2 {
-    display: flex;
-    justify-content: space-between;
-    padding: 0;
-    align-items: center;
-    margin-bottom: 25px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  align-items: center;
+  margin-bottom: 25px;
 }
 
 .mobile-heading .settings {
-    line-height: 2;
-    color: #30BE76;
+  line-height: 2;
+  color: #30be76;
 }
-
