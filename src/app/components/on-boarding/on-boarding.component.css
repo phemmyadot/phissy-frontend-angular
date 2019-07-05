@@ -179,9 +179,9 @@
         width: 100%;
     }
     .main {
-        height: 100%;
-        width: 100%;
-        position: fixed;
+        height: 100% !important;
+        width: 100% !important;
+        position: fixed !important;
     }
     .heading {
         visibility: hidden !important;
