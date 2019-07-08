@@ -22,6 +22,9 @@ body {
     src: url("assets/fonts/Nunito-Bold.ttf");
 }
 
+textarea, select, input, button {
+    outline: none;
+}
 
 .overlay.nsm-overlay-open {
     position: absolute!important;

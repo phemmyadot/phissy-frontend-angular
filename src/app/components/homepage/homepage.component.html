@@ -1,49 +1,58 @@
 <div class="main">
   <div class="container-fluid content-main">
-    <div class="row">
-      <div class="col1 col-md-3">
+    <div class="content-row">
+      <div class="col1">
         <div class="profile">
-          <div class="row" style="margin: 0">
-            <img
-              [routerLink]="['/user-profile']"
-              src="../../../assets/images/avatar.jpg"
-              alt=""
-              class="img-fluid pointer"
-            />
-            <div class="info">
-              <p [routerLink]="['/user-profile']" class="pointer bold16">
-                Nick Evans
-              </p>
-              <p class="status pointer regular14">Potato Master</p>
-              <div style="display: flex;">
-                <p class="followers regular14 pointer">
-                  548 followers &nbsp; &nbsp;
+          <div class="mobile-profile">
+            <div class="details">
+              <img
+                [routerLink]="['/user-profile']"
+                src="../../../assets/images/avatar.jpg"
+                alt=""
+                class="img-fluid pointer"
+              />
+              <div class="info">
+                <p
+                  [routerLink]="['/user-profile']"
+                  class="pointer bold16"
+                  style="margin-bottom: 0;"
+                >
+                  Nick Evans
                 </p>
-                <p class="followers regular14 pointer">
-                  &#8226; &nbsp; &nbsp; 23k likes
-                </p>
+                <p class="status pointer regular14">Potato Master</p>
+                <div style="display: flex;">
+                  <p class="followers regular14 pointer">
+                    548 followers &nbsp; &nbsp;
+                  </p>
+                  <p class="followers regular14 pointer">
+                    &#8226; &nbsp; &nbsp; 23k likes
+                  </p>
+                </div>
               </div>
+            </div>
+            <div class="mobile-edit pointer">
+              <i class="fas fa-pencil-alt"></i>
             </div>
           </div>
           <hr />
-          <div style="display: inline-flex;">
-            <div class="numbers pointer">
+          <div style="display: flex; justify-content: space-between;">
+            <div class="numbers active pointer">
               <p style="margin-bottom: 0;" class="bold20">
                 20
               </p>
-              <p class="regular14">Recipes</p>
+              <p class="regular14" style="margin-bottom: 5px;">Recipes</p>
             </div>
             <div class="numbers pointer">
               <p style="margin-bottom: 0;" class="bold20">
                 75
               </p>
-              <p class="regular14">Saved</p>
+              <p class="regular14" style="margin-bottom: 5px;">Saved</p>
             </div>
             <div class="numbers pointer" style="margin-right: 0;">
               <p style="margin-bottom: 0;" class="bold20">
                 248
               </p>
-              <p class="regular14">Following</p>
+              <p class="regular14" style="margin-bottom: 5px;">Following</p>
             </div>
           </div>
         </div>
@@ -58,7 +67,7 @@
           <p class="regular14 pointer">Sed dictum turpis lacinia non</p>
         </div>
       </div>
-      <div class="col2 col-md-6">
+      <div class="col2">
         <div class="top">
           <p class="regular14">234 of your followers are onlne</p>
           <button class="createRecipe">Create Recipe</button>
@@ -103,20 +112,22 @@
                 Suspendisse sit amet blandit velit. In lacinia eros nulla, sed
                 dictum turpis lacinia non.
               </p>
-              <div style="display: flex;margin-bottom: 0; float: left;">
-                <p class="like-comment">74 <i class="far fa-heart"></i></p>
-                &nbsp; &nbsp;
-                <p class="like-comment">
-                  26
-                  <i class="far fa-comment"></i>
-                </p>
+              <div class="save-like-div">
+                  <div class="like-comment-div">
+                      <p class="like-comment">74 <i class="far fa-heart"></i></p>
+                      &nbsp; &nbsp;
+                      <p class="like-comment">
+                        26
+                        <i class="far fa-comment"></i>
+                      </p>
+                    </div>
+                    <button
+                      class="save-btn"
+                      (click)="ngxSmartModalService.getModal('myModal1').open()"
+                    >
+                      + Save
+                    </button>
               </div>
-              <button
-                class="save-btn"
-                (click)="ngxSmartModalService.getModal('myModal1').open()"
-              >
-                + Save
-              </button>
             </div>
             <ngx-smart-modal #myModal identifier="myModal1">
               <div>
@@ -167,20 +178,22 @@
                 Suspendisse sit amet blandit velit. In lacinia eros nulla, sed
                 dictum turpis lacinia non.
               </p>
-              <div style="display: flex;margin-bottom: 0; float: left;">
-                <p class="like-comment">20 <i class="far fa-heart"></i></p>
-                &nbsp; &nbsp;
-                <p class="like-comment">
-                  9
-                  <i class="far fa-comment"></i>
-                </p>
+              <div class="save-like-div">
+                  <div class="like-comment-div">
+                      <p class="like-comment">20 <i class="far fa-heart"></i></p>
+                      &nbsp; &nbsp;
+                      <p class="like-comment">
+                        9
+                        <i class="far fa-comment"></i>
+                      </p>
+                    </div>
+                    <button
+                      class="save-btn"
+                      (click)="ngxSmartModalService.getModal('myModal2').open()"
+                    >
+                      + Save
+                    </button>
               </div>
-              <button
-                class="save-btn"
-                (click)="ngxSmartModalService.getModal('myModal2').open()"
-              >
-                + Save
-              </button>
             </div>
             <ngx-smart-modal #myModal identifier="myModal2">
               <div>
@@ -193,17 +206,16 @@
             </ngx-smart-modal>
           </div>
           <hr />
-          <div class="people row">
-            <div style="padding: 0 15px; width: 100%;">
-              <p class="bold16" style="float: left;">
+          <div class="people">
+            <div class="people-top">
+              <p class="bold16">
                 People you might want to follow
               </p>
-              <p class="bold16 pointer" style="float: right; color: #30BE76">
+              <p class="bold16 pointer" style="color: #30BE76">
                 See all suggestions
               </p>
             </div>
-            <div>
-              <div class="col-md-4" style="display: inline-block;">
+            <div style="display: flex; justify-content: space-between;">
                 <div class="people-card">
                   <div>
                     <img
@@ -221,19 +233,17 @@
                   <div style="margin: 35px 0 5px 0;">
                     <p class="regular16 no-margintopbottom">Jennifer Doe</p>
                   </div>
-                  <div style="display: inline-flex; text-align: center;">
-                    <div style="margin: 0 30px">
+                  <div class="people-numbers">
+                    <div>
                       <p class="regular14 no-margintopbottom">278</p>
                       <p class="regular10 no-margintopbottom">recipes</p>
                     </div>
-                    <div style="margin: 0 30px">
+                    <div>
                       <p class="regular14 no-margintopbottom">3k</p>
                       <p class="regular10 no-margintopbottom">followers</p>
                     </div>
                   </div>
                 </div>
-              </div>
-              <div class="col-md-4" style="display: inline-block;">
                 <div class="people-card">
                   <div>
                     <img
@@ -251,19 +261,17 @@
                   <div style="margin: 35px 0 5px 0;">
                     <p class="regular16 no-margintopbottom">Lisa Doe</p>
                   </div>
-                  <div style="display: inline-flex; text-align: center;">
-                    <div style="margin: 0 30px">
+                  <div class="people-numbers">
+                    <div>
                       <p class="regular14 no-margintopbottom">28</p>
                       <p class="regular10 no-margintopbottom">recipes</p>
                     </div>
-                    <div style="margin: 0 30px">
+                    <div>
                       <p class="regular14 no-margintopbottom">246</p>
                       <p class="regular10 no-margintopbottom">followers</p>
                     </div>
                   </div>
                 </div>
-              </div>
-              <div class="col-md-4" style="display: inline-block;">
                 <div class="people-card">
                   <div>
                     <img
@@ -281,18 +289,17 @@
                   <div style="margin: 35px 0 5px 0;">
                     <p class="regular16 no-margintopbottom">Anthony Doe</p>
                   </div>
-                  <div style="display: inline-flex; text-align: center;">
-                    <div style="margin: 0 30px">
+                  <div class="people-numbers">
+                    <div>
                       <p class="regular14 no-margintopbottom">318</p>
                       <p class="regular10 no-margintopbottom">recipes</p>
                     </div>
-                    <div style="margin: 0 30px">
+                    <div>
                       <p class="regular14 no-margintopbottom">8.3k</p>
                       <p class="regular10 no-margintopbottom">followers</p>
                     </div>
                   </div>
                 </div>
-              </div>
             </div>
           </div>
           <hr />
@@ -335,20 +342,22 @@
                 Suspendisse sit amet blandit velit. In lacinia eros nulla, sed
                 dictum turpis lacinia non.
               </p>
-              <div style="display: flex;margin-bottom: 0; float: left;">
-                <p class="like-comment">54 <i class="far fa-heart"></i></p>
-                &nbsp; &nbsp;
-                <p class="like-comment">
-                  20
-                  <i class="far fa-comment"></i>
-                </p>
+              <div class="save-like-div">
+                  <div class="like-comment-div">
+                      <p class="like-comment">54 <i class="far fa-heart"></i></p>
+                      &nbsp; &nbsp;
+                      <p class="like-comment">
+                        20
+                        <i class="far fa-comment"></i>
+                      </p>
+                    </div>
+                    <button
+                      class="save-btn"
+                      (click)="ngxSmartModalService.getModal('myModal3').open()"
+                    >
+                      + Save
+                    </button>
               </div>
-              <button
-                class="save-btn"
-                (click)="ngxSmartModalService.getModal('myModal3').open()"
-              >
-                + Save
-              </button>
             </div>
             <ngx-smart-modal #myModal identifier="myModal3">
               <div>
@@ -362,14 +371,17 @@
           </div>
         </div>
       </div>
-      <div class="col3 col-md-3">
+      <div class="col3">
         <div class="live">
           <p class="no-margintopbottom regular14">Live cooking by Phissy</p>
-          <video class="videoplayer pointer" controls>
-            <source src="../../../assets/images/video.mp4" type="video/mp4" />
-            Your browser does not support HTML5 video.
-          </video>
-          <label class="liveLabel"> live </label>
+          <div style="position: relative;">
+              <video class="videoplayer pointer" controls>
+                  <source src="../../../assets/images/video.mp4" type="video/mp4" />
+                  Your browser does not support HTML5 video.
+                </video>
+                <label class="liveLabel"> live </label>
+          </div>
+         
         </div>
         <div class="most-active" style="padding: 25px;">
           <p class="no-margintopbottom regular14" style="margin-bottom: 15px;">
@@ -387,7 +399,7 @@
             width="40"
             height="40"
             class="round-img pointer"
-            style="margin-left: 25px;"
+            style="margin-left: 1%;"
             alt=""
           />
           <img
@@ -395,7 +407,7 @@
             width="40"
             height="40"
             class="round-img pointer"
-            style="margin-left: 25px;"
+            style="margin-left: 1%;"
             alt=""
           />
           <img
@@ -403,7 +415,7 @@
             width="40"
             height="40"
             class="round-img pointer"
-            style="margin-left: 25px;"
+            style="margin-left: 1%;"
             alt=""
           />
           <img
@@ -411,15 +423,15 @@
             width="40"
             height="40"
             class="round-img pointer"
-            style="margin-left: 25px;"
+            style="margin-left: 1%;"
             alt=""
           />
         </div>
         <div class="sidebar-footer" style="padding: 25px;">
-          <div style="display: flex;" class="regular12">
+          <div style="display: flex; justify-content: space-between" class="regular12">
             <p class="pointer">About Scratch</p>
-            <p class="pointer" style="margin-left: 41px;">Help Center</p>
-            <p class="pointer" style="margin-left: 41px;">Privacy Policy</p>
+            <p class="pointer">Help Center</p>
+            <p class="pointer">Privacy Policy</p>
           </div>
           <p style="margin-top: 6px;" class="regular10">
             &#169; phissy by FMAmedia 2019
