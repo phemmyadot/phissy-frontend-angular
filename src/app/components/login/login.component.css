@@ -121,33 +121,50 @@
 
 @media screen and (max-width: 450px) {
   .main img {
-    height: unset !important;
+    height: auto!important;
+    max-height: 200px;
+    position: relative !important;
+    margin-bottom: 10px !important;
+    clip-path: polygon(0% 0%, 0% 100%, 81% 100%, 86% 97%, 93% 87%, 93% 87%, 95% 83%, 97% 78%, 99% 67%, 100% 57%, 100% 0%, 100% 0%);
   }
   .login-pane {
     position: absolute !important;
     background-color: transparent !important;
     box-shadow: none !important;
     max-height: 95% !important;
+    position: relative !important;
   }
   .logo {
       margin: 0 !important;
       left: 0 !important;
-      font-size: 20 !important;
+      font-size: 20px !important;
       text-align: left !important;
+      position: relative;
+      top: 20px;
   }
   .welcome-text {
       text-align: left !important;
-      margin-bottom: 70px !important;
+      margin-bottom: 0 !important;
   }
   .head {
-      text-align: left !important;
-      margin-bottom: 130px !important
+    height: 0 !important;
+    visibility: hidden !important;
+  }
+  .head-mobile {
+    font-size: 24px;
+    font-family: NunitoBold;
+    color: black;
+    text-align: left;
+    position: absolute;
+    top: 15%;
+    margin-bottom: 5px;
   }
   .form {
     width: 100% !important;
     right: 0 !important;
     padding: 0 !important;
     height: 540px !important;
+    position: relative !important;
   }
   .w3-container {
       padding: 0 !important;
@@ -156,7 +173,7 @@
       padding: 10px;
   }
   .loginBtn {
-      margin-bottom: 20px
+      margin-bottom: 20px;
   }
 }
 
