@@ -5,11 +5,11 @@
     position: absolute;
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: fill;
 }
 
 .gradient {
-    background: linear-gradient(180deg, rgba(255,255,255,0.35057773109243695) 0%, rgba(255,255,255,1) 80%, rgba(255,255,255,1) 100%);
+    background: linear-gradient(180deg, rgba(255,255,255,0.35057773109243695) 0%,rgba(255,255,255,1) 100%);
     height: 100%;
     width: 100%;
     position: absolute;
@@ -19,7 +19,7 @@
     max-width: 80%;
     height: auto;
     width: auto;
-    max-height: 60%;
+    max-height: fit-content;
     box-shadow: 1px 1px 20px 2px #eae0e0;
     position: absolute;
     background-color: white;
@@ -28,16 +28,12 @@
     top: 0;
     bottom: 0;
     margin: auto;
+    display: flex;
+    justify-content: space-between;
 }
 
 .form {
-    width: 450px;
-    position: absolute;
-    top: 0;
-    margin: auto;
-    bottom: 0;
-    height: 435px;
-    right: 2%;
+    flex-basis: 450px;
     padding: 30px;
 }
 
@@ -82,6 +78,10 @@
     font-size: 20px!important;
     margin-top: 0;
 }
+.logo-div {
+    flex-basis: 25%;
+    display: flex;
+}
 
 .logo {
     position: absolute;
@@ -95,7 +95,9 @@
     font-weight: normal;
     font-family: NunitoRegular;
     text-decoration: none;
+    display: -webkit-flex;
     display: flex;
+    -webkit-align-items: center;
     align-items: center;
 }
 
@@ -144,6 +146,7 @@
     max-height: 95% !important;
     max-width: 90% !important;
     position: relative !important;
+    display: unset !important;
   }
   .logo {
     margin: 0 !important;
@@ -152,6 +155,7 @@
     text-align: left !important;
     position: relative;
     top: 20px;
+    padding: 30px;
   }
   .welcome-text {
     text-align: left !important;
@@ -163,11 +167,14 @@
   }
   .head-mobile {
     visibility: unset !important;
+    margin-top: 20px;
+    width: 240px;
+    padding: 30px;
   }
   .form {
     width: 100% !important;
     right: 0 !important;
-    padding: 0 !important;
+    /* padding: 0 !important; */
     height: 540px !important;
     position: relative !important;
   }

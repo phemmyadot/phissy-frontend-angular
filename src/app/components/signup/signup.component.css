@@ -5,11 +5,11 @@
     position: absolute;
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: fill;
 }
 
 .gradient {
-    background: linear-gradient(180deg, rgba(255,255,255,0.35057773109243695) 0%, rgba(255,255,255,1) 80%, rgba(255,255,255,1) 100%);
+    background: linear-gradient(180deg, rgba(255,255,255,0.35057773109243695) 0%,rgba(255,255,255,1) 100%);
     height: 100%;
     width: 100%;
     position: absolute;
@@ -28,16 +28,12 @@
     top: 0;
     bottom: 0;
     margin: auto;
+    display: flex;
+    justify-content: space-between;
 }
 
 .form {
-    width: 450px;
-    position: absolute;
-    top: 0;
-    margin: auto;
-    bottom: 0;
-    height: 435px;
-    right: 2%;
+    flex-basis: 450px;
     padding: 30px;
 }
 
@@ -138,7 +134,7 @@
     clip-path: polygon(0% 0%, 0% 100%, 81% 100%, 86% 97%, 93% 87%, 93% 87%, 95% 83%, 97% 78%, 99% 67%, 100% 57%, 100% 0%, 100% 0%);
   }
   .login-pane {
-    position: absolute !important;
+    /* position: absolute !important; */
     background-color: transparent !important;
     box-shadow: none !important;
     max-height: 95% !important;
@@ -152,6 +148,7 @@
     text-align: left !important;
     position: relative;
     top: 20px;
+    padding: 30px;
   }
   .welcome-text {
     text-align: left !important;
@@ -163,11 +160,14 @@
   }
   .head-mobile {
     visibility: unset !important;
+    margin-top: 20px;
+    width: 240px;
+    padding: 30px;
   }
   .form {
     width: 100% !important;
     right: 0 !important;
-    padding: 0 !important;
+    /* padding: 0 !important; */
     height: 540px !important;
     position: relative !important;
   }
