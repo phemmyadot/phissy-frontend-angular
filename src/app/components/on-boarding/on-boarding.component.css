@@ -15,7 +15,9 @@
 }
 .gradient {
     background: linear-gradient(180deg, rgba(255,255,255,0.35057773109243695) 0%, rgba(255,255,255,0.865983893557423) 80%);
-    height: 860px;
+    height: 100%;
+    width: 100%;
+    position: absolute;
 }
 
 .heading {
