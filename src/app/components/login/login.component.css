@@ -122,7 +122,7 @@
 @media screen and (max-width: 450px) {
   .main img {
     height: auto!important;
-    max-height: 200px;
+    max-height: 100%;
     position: relative !important;
     margin-bottom: 10px !important;
     clip-path: polygon(0% 0%, 0% 100%, 81% 100%, 86% 97%, 93% 87%, 93% 87%, 95% 83%, 97% 78%, 99% 67%, 100% 57%, 100% 0%, 100% 0%);
