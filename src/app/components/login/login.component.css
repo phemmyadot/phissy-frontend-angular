@@ -132,6 +132,7 @@
     background-color: transparent !important;
     box-shadow: none !important;
     max-height: 95% !important;
+    max-width: 90% !important;
     position: relative !important;
   }
   .logo {
