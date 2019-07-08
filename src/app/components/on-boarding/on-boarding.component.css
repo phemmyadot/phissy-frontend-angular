@@ -211,13 +211,25 @@
 
 @media screen and (max-height: 450px){
     .buttons {
-        top: 75% !important;
+        /* top: 75% !important; */
+        visibility: hidden;
     }
     .intro {
-        top: 55% !important;
+        /* top: 55% !important; */
+        visibility: hidden;
     }
     .joinBtn, .learnBtn {
-        width: 200px !important;
+        /* width: 200px !important; */
+        visibility: hidden;
+    }
+    .heading {
+        visibility: hidden;
+    }
+    .logo {
+        top: 40% !important;
+    }
+    .gradient {
+        background: linear-gradient(360deg, rgba(255,255,255,0.35057773109243695) 0%, rgba(255,255,255,2.865984) 32%) !important;
     }
 }
 
