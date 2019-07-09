@@ -86,7 +86,7 @@
     height: 46px;
     bottom: 0;
     margin: auto;
-    font-size: 24px;
+    font-size: 20px;
     color: black;
     font-weight: normal;
     font-family: NunitoRegular;
@@ -97,7 +97,7 @@
 
 .logo i {
     color: #30BE76;
-    font-size: 40px;
+    font-size: 25px;
     margin-right: 10px;
 }
 
