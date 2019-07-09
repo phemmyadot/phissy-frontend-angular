@@ -1,11 +1,8 @@
 {
-  "short_name": "Phissy",
-  "name": "Phissy Cooking App",
-  "start_url": "/index.html",
-
-  "theme_color": "#f48c5b",
-  "background_color": "#ffffff",
-
-  "display": "standalone",
-  "orientation": "portrait"
+  "name": "Donate App",
+  "description": "This app helps you donate to worthy causes.",
+  "icons": [{
+    "src": "images/icon.png",
+    "sizes": "192x192"
+  }]
 }

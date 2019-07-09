@@ -1,12 +1,8 @@
 {
-    "short_name": "FireStarter",
-    "name": "Angular4 + Firebase Starter App",
-    "start_url": "/index.html",
-  
-    "theme_color": "#f48c5b",
-    "background_color": "#ffffff",
-  
-    "display": "standalone",
-    "orientation": "portrait"
-  }
-  
+  "name": "Donate App",
+  "description": "This app helps you donate to worthy causes.",
+  "icons": [{
+    "src": "assets/images/logo.jpg",
+    "sizes": "192x192"
+  }]
+}
