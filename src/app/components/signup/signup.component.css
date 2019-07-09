@@ -124,7 +124,10 @@
     margin-bottom: 5px;
     visibility: hidden;
 }
-
+.logo-div {
+    flex-basis: 25%;
+    display: flex;
+}
 @media screen and (max-width: 450px) {
   .main img {
     height: auto!important;
@@ -134,12 +137,13 @@
     clip-path: polygon(0% 0%, 0% 100%, 81% 100%, 86% 97%, 93% 87%, 93% 87%, 95% 83%, 97% 78%, 99% 67%, 100% 57%, 100% 0%, 100% 0%);
   }
   .login-pane {
-    /* position: absolute !important; */
+    position: absolute !important;
     background-color: transparent !important;
     box-shadow: none !important;
     max-height: 95% !important;
     max-width: 90% !important;
     position: relative !important;
+    display: unset !important;
   }
   .logo {
     margin: 0 !important;
