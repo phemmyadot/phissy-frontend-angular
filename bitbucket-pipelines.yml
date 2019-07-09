@@ -10,5 +10,5 @@ pipelines:
             - node
           script: 
             - npm install
-            - npm run build --prod
+            - npm run build --prod --output-hashing all
             - npm run deploy
