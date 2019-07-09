@@ -1,6 +1,6 @@
 <div class="main">
-  <div class="container-fluid content-main">
-    <div class="content-row">
+  <div class="container-fluid feeds-main">
+    <div class="feeds-row">
       <div class="col1">
         <div class="mobile-heading">
           <p class="bold24">Kitchen</p>
@@ -16,14 +16,14 @@
           <div class="mobile-profile">
             <div class="row details">
               <img
-                [routerLink]="['/user-profile']"
+                [routerLink]="['/my-profile']"
                 src="../../../assets/images/avatar.jpg"
                 alt=""
                 class="img-fluid pointer"
               />
               <div class="info">
                 <p
-                  [routerLink]="['/user-profile']"
+                  [routerLink]="['/my-profile']"
                   class="pointer bold16"
                   style="margin-bottom: 0;"
                 >
@@ -86,7 +86,7 @@
             <button class="createRecipe">+ Add New</button>
           </div>
         </div>
-        <div class="content">
+        <div class="feeds">
           <div
             class="post-cont"
             style="display: flex; justify-content: space-between; flex-wrap: wrap;"

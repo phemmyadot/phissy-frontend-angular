@@ -3,13 +3,13 @@
     background-color: #f7f8fa;
     padding: 50px 0;
 }
-.content-main {
+.feeds-main {
     max-width: 80%;
   z-index: 1;
   position: relative;
 }
 
-.content-main .content-row {
+.feeds-main .feeds-row {
     display: flex;
     justify-content: space-between 
 }
@@ -81,7 +81,7 @@
     /* float: left;  */
     line-height: 2.5;
 }
-.col2 .content {
+.col2 .feeds {
     height: 100%;
     background-color: white;
     border-radius: 5px;
@@ -110,7 +110,7 @@
     margin-top: 23px;
 }
 
-.col2 .content .post {
+.col2 .feeds .post {
     /* padding-bottom: 25px; */
     position: relative;
     margin-top: 25px;
@@ -118,26 +118,26 @@
     border-radius: 5px;
     box-shadow: 1px 1px 8px -4px #0D3320;
 }
-.col2 .content .people-top {
+.col2 .feeds .people-top {
     /* padding: 0 15px;  */
     width: 100%; 
     display: flex; 
     justify-content: space-between;
     margin-bottom: 20px;
 }
-.col2 .content .post .image {
+.col2 .feeds .post .image {
     width: 100%; 
     object-fit: none; 
     height: 238px;
 }
 
-.col2 .content .people .image {
+.col2 .feeds .people .image {
     width: 100%; 
     object-fit: cover; 
     height: 110px;
 }
 
-.col2 .content .people .image-layer {
+.col2 .feeds .people .image-layer {
     width: 100%; 
     height: 47.62%;
     background-color: white;
@@ -146,7 +146,7 @@
     opacity: .6;
 }
 
-.col2 .content .people .round-img {
+.col2 .feeds .people .round-img {
     width: 80px;
     height: 80px;
     position: absolute;
@@ -165,7 +165,7 @@
     justify-content: space-between;
 }
 
-.col2 .content .post .top-div {
+.col2 .feeds .post .top-div {
     background-color: #FFFFFF; 
     position: absolute; 
     height: 62px; 
@@ -176,13 +176,13 @@
     display: flex;
 }
 
-.col2 .content .people {
+.col2 .feeds .people {
     height: 273px;
     margin-top: 10px;
     /* width: 551px; */
 }
 
-.col2 .content .people .people-card {
+.col2 .feeds .people .people-card {
     /* width: 174px; */
     height: 231px;
     box-shadow: 1px 1px 8px -4px #0D3320;
@@ -195,7 +195,7 @@
     flex-basis: 32%;
 }
 
-.col2 .content .people .people-card:hover {
+.col2 .feeds .people .people-card:hover {
     transform: scale(1.06);
 }
 
@@ -349,9 +349,11 @@
     margin: 15px 0 8px 0;
 }
 
-@media screen and (max-width: 450px) {
-
+.top-div-tab {
+    visibility: hidden;
+    height: 0;
 }
+
 @media screen and (min-width: 455px) {
     .mobile-edit {
         visibility: hidden;
@@ -363,12 +365,53 @@
     }
   }
 
-  @media screen and (min-width: 1025px) {
-    .content-row {
+@media screen and (min-width: 451px) and (max-width: 1024px) {
+    .col1, .col3 {
+        visibility: hidden;
+        height: 0;
+    }
+    .feeds-row {
+        display: unset !important;
+    }
+    .feeds-main {
+        max-width: 100%;
+    }
+    .main {
+        background-color: #FFFFFF;
+    }
+    .col2 .feeds .post .image {
+        object-fit: cover;
+    }
+    .col2 .feeds .post {
+        display: flex;
+    }
+    .col2 .feeds .post .top-div {
+        visibility: hidden;
+    }
+    .top-div-tab {
+        display: flex;
+        margin-bottom: 20px;
+        visibility: unset;
+        height: 32px;
+    }
+    .col2 .feeds {
+        padding: 0;
+    }
+    .col3 {
+        position: absolute;
+        top: 0;
+    }
+    .save-like-div {
+        margin-top: 30px;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    .feeds-row {
         display: flex !important;
         justify-content: space-between !important;
     }
-    .col2 .content .post {
+    .col2 .feeds .post {
         flex-basis: 48.8% !important;
     } 
     .mobile-line {
@@ -383,10 +426,10 @@
         /* margin-right: 73px;  */
         border-bottom: 5px solid #FFFFFF !important;
     }
-  }
-  @media screen and (min-width: 1280px) and (max-width: 1600px) {
+    }
+    @media screen and (min-width: 1280px) and (max-width: 1600px) {
     .col1 .profile .info {
         margin-left: 0 !important;
         margin-top: 5px;
     }
-  }
+}

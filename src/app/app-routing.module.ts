@@ -11,8 +11,8 @@ const routes: Routes = [
   { path: '', component: OnBoardingComponent },
   { path: 'signup', component: SignupComponent },
   { path: 'login', component: LoginComponent },
-  { path: 'home', component: HomepageComponent },
-  { path: 'user-profile', component: UserProfileComponent },
+  { path: 'feeds', component: HomepageComponent },
+  { path: 'my-profile', component: UserProfileComponent },
   { path: 'slider', component: SliderComponent }
 ];
 

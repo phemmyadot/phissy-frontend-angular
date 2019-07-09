@@ -25,7 +25,7 @@
   top: 0;
 }
 
-.content-main {
+.feeds-main {
   max-width: 80%;
   z-index: 1;
   position: relative;
@@ -93,35 +93,35 @@
   vertical-align: top;
 }
 
-.col2 .content {
+.col2 .feeds {
   width: 100%;
   margin-top: 23px;
   padding: 25px;
   background-color: #ffffff;
   border-radius: 8px;
 }
-.col2 .content .post {
+.col2 .feeds .post {
   box-shadow: 1px 1px 8px -4px #0d3320;
   margin-bottom: 25px;
   height: 338px;
   border-radius: 8px;
 }
-.col2 .content .post .post-img img {
+.col2 .feeds .post .post-img img {
   height: 220px;
   width: 100%;
   object-fit: cover;
   border-radius: 8px 8px 0 0;
 }
 
-.col2 .content .post .post-texts {
+.col2 .feeds .post .post-texts {
   padding: 20px;
 }
-.col2 .content .post .post-texts .cook-btn {
+.col2 .feeds .post .post-texts .cook-btn {
   flex: 1;
   justify-content: flex-end;
   display: flex;
 }
-.col2 .content .post .post-texts .cook-btn button {
+.col2 .feeds .post .post-texts .cook-btn button {
   background-color: transparent;
   border: 1px solid #30be76;
   border-radius: 5px;
@@ -130,7 +130,7 @@
   color: #30be76;
   justify-content: center;
 }
-.col2 .content .post .post-texts .cook-btn button:hover {
+.col2 .feeds .post .post-texts .cook-btn button:hover {
   background-color: #30be76;
   color: #ffffff;
 }
@@ -218,7 +218,7 @@
   color: #ffffff;
 }
 
-.col2 .content .post .post-texts .numbers {
+.col2 .feeds .post .post-texts .numbers {
   display: flex;
   flex: 1;
 }
@@ -261,7 +261,7 @@
   .gradient {
       visibility: hidden;
   }
-  .content-main {
+  .feeds-main {
       max-width: 100%!important;
       padding: 15px!important;
   }
@@ -280,7 +280,7 @@
       visibility: hidden;
       height: 0!important;
   }
-  .col2 .content {
+  .col2 .feeds {
       margin-top: 0!important;
       padding: 5px 0!important;
   }
@@ -289,19 +289,19 @@
       display: flex;
   }
 
-  .col2 .content .post {
+  .col2 .feeds .post {
       height: 155px !important;
       border-radius: 8px;
       width: 47.8%;
       margin-bottom: 15px !important;
   }
-  .col2 .content .post .post-img img {
+  .col2 .feeds .post .post-img img {
       height: 120px !important;
   }
-  .col2 .content .post .post-texts {
+  .col2 .feeds .post .post-texts {
       padding: 5px 25px !important;
   }
-  .col2 .content .post p {
+  .col2 .feeds .post p {
       text-align: center;
   }
   .col1 .profile .numbers, .col1 .profile .followers {
@@ -358,7 +358,7 @@
   .gradient {
       visibility: hidden;
   }
-  .content-main {
+  .feeds-main {
       max-width: 100%!important;
       padding: 15px!important;
   }
@@ -377,24 +377,24 @@
       visibility: hidden;
       height: 0!important;
   }
-  .col2 .content {
+  .col2 .feeds {
       margin-top: 0!important;
       padding: 5px 0!important;
   }
 
-  .col2 .content .post {
+  .col2 .feeds .post {
       height: 183px !important;
       border-radius: 8px;
       width: 49%;
       margin-bottom: 20px !important;
   }
-  .col2 .content .post .post-img img {
+  .col2 .feeds .post .post-img img {
       height: 148px !important;
   }
-  .col2 .content .post .post-texts {
+  .col2 .feeds .post .post-texts {
       padding: 5px 25px !important;
   }
-  .col2 .content .post p {
+  .col2 .feeds .post p {
       text-align: center;
   }
   .col1 .profile .numbers, .col1 .profile .followers {
@@ -424,11 +424,11 @@
   }
 }
 @media screen and (min-width: 1025px) {
-  .content-row {
+  .feeds-row {
       display: flex !important;
       justify-content: space-between !important;
   }
-  .col2 .content .post {
+  .col2 .feeds .post {
       flex-basis: 48.8% !important;
   } 
   .mobile-line {

@@ -128,6 +128,22 @@
     flex-basis: 25%;
     display: flex;
 }
+.logo-div-tablet {
+    visibility: hidden;
+    height: 0;
+}
+.head-tablet {
+    font-size: 24px;
+    font-family: NunitoBold;
+    color: black;
+    text-align: left;
+    position: absolute;
+    top: 20%;
+    margin-bottom: 5px;
+    visibility: hidden;
+    height: 0;
+}
+
 @media screen and (max-width: 450px) {
   .main img {
     height: auto!important;
@@ -186,3 +202,78 @@
   }
 }
 
+
+@media screen and (max-width: 1024px) and (min-width: 451px) {
+    .login-pane {
+        display: unset;
+        max-width: 50%;
+    }
+    .logo-div {
+        visibility: hidden;
+        height: 0;
+        width: 0;
+    }
+    .head {
+        visibility: hidden;
+        height: 0;
+        width: 0;
+    }
+    .welcome-text {
+        text-align: left;
+    }
+    .head-tablet {
+        visibility: unset !important;
+        width: 170px;
+        margin: auto;
+        position: absolute;
+        right: 0;
+        left: 0;
+      }
+      .logo-div-tablet {
+        visibility: unset;
+    }
+    .logo {
+        left: 0;
+        right: 0;
+        top: 10%;
+        width: 123px;
+        bottom: unset;
+    }
+}
+
+@media screen and (max-height: 450px){
+    .main img {
+        visibility: hidden;
+        height: 0;
+    }
+    .gradient {
+        visibility: hidden;
+        height: 0;
+    }
+    .login-pane {
+        box-shadow: none;
+        max-width: 70%;
+    }
+    .head-mobile {
+        visibility: unset;
+        height: 30px;
+        padding: 0 40px;
+        position: unset;
+    }
+    .logo-div {
+        visibility: unset;
+        height: 110px;
+    }
+    .logo-div-tablet {
+        visibility: hidden;
+    }
+}
+
+@media screen and (max-width: 1024px) and (min-width: 900px)  and (max-height: 770px) {
+    .head-tablet {
+        top: 2%;
+    }
+    .logo-div-tablet .logo {
+        top: 8%;
+    }
+}
