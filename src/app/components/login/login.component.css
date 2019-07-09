@@ -99,7 +99,7 @@
     display: -webkit-flex;
     display: flex;
     -webkit-align-items: center;
-    align-items: center;
+    align-items: baseline;
 }
 
 .logo i {

@@ -92,7 +92,7 @@
     font-family: NunitoRegular;
     text-decoration: none;
     display: flex;
-    align-items: center;
+    align-items: baseline;
 }
 
 .logo i {

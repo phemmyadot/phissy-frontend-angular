@@ -349,11 +349,52 @@
     margin: 15px 0 8px 0;
 }
 
+.mobile-nav {
+    display: flex;
+    visibility: hidden;
+    justify-content: space-between;
+    align-items: baseline;
+    height: 0;
+}
+
 .top-div-tab {
     visibility: hidden;
     height: 0;
 }
+.logo-div {
+    flex-basis: 25%;
+    display: flex;
+    
+}
 
+.logo {
+    top: 0;
+    height: 46px;
+    bottom: 0;
+    margin: auto;
+    font-size: 16px;
+    color: black;
+    font-weight: normal;
+    font-family: NunitoRegular;
+    text-decoration: none;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: baseline;
+}
+
+.logo i {
+    color: #30BE76;
+    font-size: 20px;
+    margin-right: 10px;
+}
+.mobile-nav .icon i {
+    margin-left: 20px; 
+}
+.mobile-nav .icon {
+    align-items: baseline;
+    display: flex;
+}
 @media screen and (min-width: 455px) {
     .mobile-edit {
         visibility: hidden;
@@ -365,6 +406,58 @@
     }
   }
 
+@media screen and (max-width: 450px) {
+    .col1, .col3 {
+        visibility: hidden;
+        height: 0;
+    }
+    .feeds-row {
+        display: unset !important;
+    }
+    .feeds-main {
+        max-width: 100%;
+    }
+    .main {
+        background-color: #FFFFFF;
+    }
+    .col2 .feeds .post .image {
+        object-fit: cover;
+        height: 180px;
+    }
+    .col2 .feeds {
+        padding: 0;
+    }
+    .col2 .top p {
+        font-size: 12px !important;
+    }
+    .col3 {
+        position: absolute;
+        top: 0;
+    }
+    .save-like-div {
+        margin-top: 30px;
+    }
+    .createRecipe {
+        width: 110px;
+    }
+    .mobile-nav {
+        visibility: unset;
+        margin-bottom: 10px;
+        height: 100%;
+    }
+    .people {
+        visibility: hidden;
+        height: 0 !important;
+        margin: 0 !important;
+    }
+    .line-hide-mobile {
+        visibility: hidden;
+        height: 0 !important;
+        border: 0;
+        margin: 0;
+    }
+
+}
 @media screen and (min-width: 451px) and (max-width: 1024px) {
     .col1, .col3 {
         visibility: hidden;
