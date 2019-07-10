@@ -8,9 +8,14 @@
   "start_url": "/",
   "icons": [
       {
-        "src": "assets/images/logo.jpg",
-        "sizes": "72x72",
-        "type": "image/jpg"
-      }
+          "src": "assets/images/icon.png",
+          "sizes": "72x72",
+          "type": "image/png"
+      },
+      {
+        "src": "assets/images/icon.png",
+        "sizes": "144x144",
+        "type": "image/png"
+    }
   ]
 }
