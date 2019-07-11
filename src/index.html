@@ -11,15 +11,18 @@
   <title>CookingApp</title>
   <base href="/">
   <!-- Fallback application metadata for legacy browsers -->
-<meta name="application-name" content="Racer3K">
-<link rel="icon" sizes="16x16 32x32 48x48" href="./assets/images/logo.jpg">
-<link rel="icon" sizes="512x512" href="./assets/images/logo.jpg">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="Phissy Cooking App">
+  <link rel="apple-touch-icon" href="/assets/images/icon.png">
+  <meta name="description" content="A cooking app">
+  <meta name="theme-color" content="#30BE76" />
   
   <!-- pwas -->
   
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico"> 
-  <link rel="manifest" href="/manifest.json">
+  <link rel="manifest" href="/manifest.json" crossOrigin="use-credentials">
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
@@ -27,4 +30,12 @@
 <body>
   <app-root></app-root>
 </body>
+  <script src="/scripts/install.js"></script>
+  <script>
+     if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+      navigator.serviceWorker.register('/service-worker.js', { scope: '/' });
+    });
+  }
+  </script>
 </html>
