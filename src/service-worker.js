@@ -2,6 +2,7 @@ const FILES_TO_CACHE = [
     '/offline.html',
   ];
   var CACHE_NAME = "cache-v1";
+
   self.addEventListener("install", (e) => {
     e.waitUntil(
       caches.open(CACHE_NAME).then((cache) => {
@@ -9,18 +10,62 @@ const FILES_TO_CACHE = [
         return cache.addAll(FILES_TO_CACHE);
       })
   );
-  }); 
-  self.addEventListener("fetch", (e) => {
-      e.respondWith(
-        fetch(evt.request)
-            .catch(() => {
-              return caches.open(CACHE_NAME)
-                  .then((cache) => {
-                    return cache.match('offline.html');
-                  });
-            })
-      );
   });
+
+  self.addEventListener('activate', function(event) {
+    console.log('Finally active. Ready to start serving content!');
+  });
+
+  // self.addEventListener("fetch", (e) => {
+  //     e.respondWith(
+  //       fetch(evt.request)
+  //           .catch(() => {
+  //             return caches.open(CACHE_NAME)
+  //                 .then((cache) => {
+  //                   return cache.match('offline.html');
+  //                 });
+  //           })
+  //     );
+  // });
+  self.addEventListener('fetch', function(event) {
+    event.respondWith(
+      caches.match(event.request)
+        .then(function(response) {
+          // Cache hit - return response
+          if (response) {
+            return response;
+          }
+          return fetch(event.request);
+        }
+      )
+    );
+    console.log('Fetch');
+  });
+  // addEventListener('fetch', function(event) {
+  //   event.respondWith(
+  //     caches.match(event.request)
+  //       .then(function(response) {
+  //         if (response) {
+  //           return response;     // if valid response is found in cache return it
+  //         } else {
+  //           return fetch(event.request)     //fetch from internet
+  //             .then(function(res) {
+  //               return caches.open(CACHE_NAME)
+  //                 .then(function(cache) {
+  //                   cache.put(event.request.url, res.clone());    //save the response for future
+  //                   return res;   // return the fetched data
+  //                 })
+  //             })
+  //             .catch(function(err) {       // fallback mechanism
+  //               return caches.open(CACHE_CONTAINING_ERROR_MESSAGES)
+  //                 .then(function(cache) {
+  //                   return cache.match('offline.html');
+  //                 });
+  //             });
+  //         }
+  //       })
+  //   );
+  // });   
   
   importScripts('https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js');
   
